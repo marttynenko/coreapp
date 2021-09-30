@@ -1,44 +1,135 @@
+footer.footer#footer
+  .container  
+    .row 
+      .col-sm-3.col-6
+        .footer-title Платформа
+        ul.footer-menu
+          li 
+            a(href="#") Главная страница
+          li 
+            a(href="#") Возможности
+          li 
+            a(href="#") Тарифы
+          li 
+            a(href="#") Вакансии
+
+      .col-sm-3.col-6
+        .footer-title Решения
+        ul.footer-menu
+          li 
+            a(href="#") Онлайн-академия
+          li 
+            a(href="#") Вузами и ИРО
+          li 
+            a(href="#") Корпоративное обучение
+      
+      .col-md-3.col-sm-6.col-12
+        .footer-title Ресурсы
+        ul.footer-menu
+          li 
+            a(href="#") Мероприятия
+          li 
+            a(href="#") CJournal
+          li 
+            a(href="#") Справочный центр
+          li 
+            a(href="#") Библиотека уроков
+          li 
+            a(href="#") Обновления
+      
+      .col-md-3.col-xs-6.col-footer-subs
+        .footer-title Подписаться
+        .footer-form
+          input.footer-form-input(type="email", placeholder="E-mail")
+          button.footer-form-submit.btn.--blue-full Ok
+        
+        .footer-media 
+          a.footer-media-link(href="#" target="_blank" rel="nofollow")
+            img(src="./assets/img/footer-fb.svg", alt="fb", loading="lazy")
+          a.footer-media-link(href="#" target="_blank" rel="nofollow")
+            img(src="./assets/img/footer-insta.svg", alt="insta", loading="lazy")
+          a.footer-media-link(href="#" target="_blank" rel="nofollow")
+            img(src="./assets/img/footer-vk.svg", alt="vk", loading="lazy")
+          a.footer-media-link(href="#" target="_blank" rel="nofollow")
+            img(src="./assets/img/footer-tl.svg", alt="telegram", loading="lazy")
+
+        .footer-terms
+          .footer-terms-item
+            a(href="#") Пользовательское соглашение 
+          .footer-terms-item
+            a(href="#") Политика конфиденциальности 
+
+      .col-md-6.col-xs-6
+        .footer-copy © ООО “Цифровая жажда” 2021
+
+        .footer-logos
+          .footer-logos-item 
+            img(src="./assets/img/footer-logo-1.svg", alt="Sk", loading="lazy")
+          .footer-logos-item 
+            img(src="./assets/img/footer-logo-2.svg", alt="АСИ", loading="lazy")
+
+
+.popup-bg(data-popup="transfer",onclick="")
 .popup(data-popup="transfer")
-  .popup__bg
-  form.popup__panel 
-    .popup__title Перенос курса с другой платформы
-    .popup__input 
-      input(type="text" placeholder="Email")
-      .input__description Почта введена правильно
-    .btn-center
-      button.btn.--blue-shadow
-        | Заказать перенос
-        +svgsprite('btn-arrow')
+  .popup-container
+    .popup-content
+      .popup-popup
+        .popup-close(onclick="")
+        form.popup__panel 
+          .popup__title Перенос курса с другой платформы
+          .popup__input 
+            input(type="text" placeholder="Email")
+            .input__description Почта введена правильно
+          .btn-center
+            button.btn.--blue-shadow
+              | Заказать перенос
+              +svgsprite('btn-arrow')
+
+.popup-bg(data-popup="metodology",onclick="")
 .popup(data-popup="metodology")
-  .popup__bg
-  form.popup__panel 
-    .popup__title Арендовать методолога
-    .popup__input 
-      input(type="text" placeholder="Email")
-      .input__description Почта введена правильно
-    .btn-center
-      button.btn.--blue-shadow
-        | Почта введена правильно
-        +svgsprite('btn-arrow')
+  .popup-container
+    .popup-content
+      .popup-popup
+        .popup-close(onclick="")
+        form.popup__panel 
+          .popup__title Арендовать методолога
+          .popup__input 
+            input(type="text" placeholder="Email")
+            .input__description Почта введена правильно
+          .btn-center
+            button.btn.--blue-shadow
+              | Почта введена правильно
+              +svgsprite('btn-arrow')
+
+.popup-bg(data-popup="bots",onclick="")            
 .popup(data-popup="bots")
-  .popup__bg
-  form.popup__panel 
-    .popup__title Разработка маркетинговой воронки для чат-ботов и рассылок
-    .popup__input 
-      input(type="text" placeholder="Email")
-      .input__description Почта введена правильно
-    .btn-center
-      button.btn.--blue-shadow
-        | Заказать воронку
-        +svgsprite('btn-arrow')
+  .popup-container
+    .popup-content 
+      .popup-popup
+        .popup-close(onclick="")
+        form.popup__panel 
+          .popup__title Разработка маркетинговой воронки для чат-ботов и рассылок
+          .popup__input 
+            input(type="text" placeholder="Email")
+            .input__description Почта введена правильно
+          .btn-center
+            button.btn.--blue-shadow
+              | Заказать воронку
+              +svgsprite('btn-arrow')
+
+
+.popup-bg(data-popup="analtic",onclick="")             
 .popup(data-popup="analtic")
-  .popup__bg
-  form.popup__panel 
-    .popup__title Подключение бизнес-аналитики PowerBi
-    .popup__input 
-      input(type="text" placeholder="Email")
-      .input__description Почта введена правильно
-    .btn-center
-      button.btn.--blue-shadow
-        | Подключить бизнес-аналитику
-        +svgsprite('btn-arrow')
+  .popup-container
+    .popup-content
+      .popup-popup
+        .popup-close(onclick="")
+        form.popup__panel
+          .popup__title Подключение бизнес-аналитики PowerBi
+          .popup__input
+            input(type="text" placeholder="Email")
+            .input__description Почта введена правильно
+          .btn-center
+            button.btn.--blue-shadow
+              | Подключить бизнес-аналитику
+              +svgsprite('btn-arrow')

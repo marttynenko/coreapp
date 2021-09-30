@@ -7,37 +7,48 @@ block content
   section.plans-page
     .container
       h3 Тарифы
-      
-      .plans-cards 
-        .plans-card__item.--base 
-          .plans-card__title 
-            img(src="./assets/img/plans/base.svg", alt="") 
-            | Базовый
-          .plans-card__description Для репетиторов и начинающих специалистов
-          .plans-card__price 0 ₽/мес.
-        .plans-card__item
-          .plans-card__title 
-            img(src="./assets/img/plans/profi.svg", alt="") 
-            | Профи
-          .plans-card__description Для малого бизнеса
-          .plans-card__price.--profi от 990 ₽/мес.
-        .plans-card__item.--profi
-          .plans-card__title 
-            img(src="./assets/img/plans/guru.svg", alt="") 
-            | Гуру
-          .plans-card__description Для крупных компаний и экспертов
-          .plans-card__price.--guru  от 11 990 ₽/мес.
-        .plans-card__item.--online 
-          .plans-card__title 
-            img(src="./assets/img/plans/online.svg", alt="") 
-            | Онлайн академия
-          .plans-card__description Для онлайн-школ, вузов и ИРО
-          .plans-card__price.--online от 30 000 ₽/мес.
 
       .plans__table-wrap
         .plans__table
           .plans-page__block 
+            .plans-page__flex
+              .plans-page__left
+
+              .plans-page__right
+                .plans-page__item
+                  .plans-card__item.--base 
+                    .plans-card__title 
+                      img(src="./assets/img/plans/base.svg", alt="") 
+                      | Базовый
+                    .plans-card__description Для репетиторов и начинающих специалистов
+                    .plans-card__price 0 ₽/мес.
+
+                .plans-page__item
+                  .plans-card__item
+                    .plans-card__title 
+                      img(src="./assets/img/plans/profi.svg", alt="") 
+                      | Профи
+                    .plans-card__description Для малого бизнеса
+                    .plans-card__price.--profi от 990 ₽/мес.
+
+                .plans-page__item
+                  .plans-card__item.--profi
+                    .plans-card__title 
+                      img(src="./assets/img/plans/guru.svg", alt="") 
+                      | Гуру
+                    .plans-card__description Для крупных компаний и экспертов
+                    .plans-card__price.--guru  от 11 990 ₽/мес.
+
+                .plans-page__item
+                  .plans-card__item.--online 
+                    .plans-card__title 
+                      img(src="./assets/img/plans/online.svg", alt="") 
+                      | Онлайн академия
+                    .plans-card__description Для онлайн-школ, вузов и ИРО
+                    .plans-card__price.--online от 30 000 ₽/мес.
+
             h4 Образовательный процесс
+            
             .plans-page__flex
               .plans-page__left
                 .plans-page__name Количество активных уроков

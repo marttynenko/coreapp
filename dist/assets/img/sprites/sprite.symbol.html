@@ -21,7 +21,12 @@ They might well be outsourced to an external stylesheet of course.
 <style type="text/css">
 	.svg-btn-arrow-dims { width: 28px; height: 28px; }
 	.svg-dropdown-dims { width: 20px; height: 12px; }
+	.svg-facebook-dims { width: 22px; height: 22px; }
 	.svg-fb-dims { width: 8px; height: 17px; }
+	.svg-footer-fb-dims { width: 30px; height: 30px; }
+	.svg-footer-insta-dims { width: 30px; height: 30px; }
+	.svg-footer-tl-dims { width: 30px; height: 30px; }
+	.svg-footer-vk-dims { width: 30px; height: 30px; }
 	.svg-in-dims { width: 16px; height: 16px; }
 	.svg-menu-1-dims { width: 24px; height: 24px; }
 	.svg-menu-10-dims { width: 24px; height: 24px; }
@@ -64,7 +69,12 @@ for further details on how to create this embeddable sprite variant.
 <svg width="0" height="0" style="position:absolute">
 		<symbol viewBox="0 0 28 28" id="btn-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M4.667 12.833v2.333h14l-6.417 6.417 1.657 1.657 9.24-9.24-9.24-9.24-1.657 1.656 6.417 6.417h-14z"/></symbol>
 		<symbol viewBox="0 0 20 12" id="dropdown" xmlns="http://www.w3.org/2000/svg"><path d="M18 2l-7.84 8L2 2"/></symbol>
+		<symbol fill="none" viewBox="0 0 22 22" id="facebook" xmlns="http://www.w3.org/2000/svg"><path d="M15.16 2.036v3.5h-1.75c-.603 0-.874.709-.874 1.313v2.187h2.625v3.5h-2.625v7h-3.5v-7H6.41v-3.5h2.625v-3.5a3.5 3.5 0 013.5-3.5h2.625z" fill="#262B37"/></symbol>
 		<symbol viewBox="0 0 8 17" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.017 8.47H4.875v7.844H1.631V8.47H.088V5.713h1.543V3.929c0-1.276.606-3.274 3.273-3.274l2.403.01v2.676H5.564c-.286 0-.688.143-.688.752v1.622H7.3L7.017 8.47z" fill="#DBDCE8"/></symbol>
+		<symbol fill="none" viewBox="0 0 30 30" id="footer-fb" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#474F60"/><mask id="ea" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="22" height="22"><path d="M19.16 6.036v3.5h-1.75c-.603 0-.874.709-.874 1.313v2.187h2.625v3.5h-2.625v7h-3.5v-7H10.41v-3.5h2.625v-3.5a3.5 3.5 0 013.5-3.5h2.625z" fill="#262B37"/></mask><g mask="url(#ea)"><path fill="#262B37" d="M0 0h30v30H0z"/></g></symbol>
+		<symbol fill="none" viewBox="0 0 30 30" id="footer-insta" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#474F60"/><mask id="fa" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="22" height="22"><path d="M11.11 6.036h7.35c2.8 0 5.076 2.275 5.076 5.075v7.35a5.075 5.075 0 01-5.075 5.075h-7.35a5.079 5.079 0 01-5.075-5.075v-7.35a5.075 5.075 0 015.075-5.075zm-.174 1.75a3.15 3.15 0 00-3.15 3.15v7.7a3.148 3.148 0 003.15 3.15h7.7a3.15 3.15 0 003.15-3.15v-7.7a3.148 3.148 0 00-3.15-3.15h-7.7zM19.38 9.1a1.094 1.094 0 110 2.188 1.094 1.094 0 010-2.188zm-4.594 1.312a4.375 4.375 0 110 8.75 4.375 4.375 0 010-8.75zm0 1.75a2.625 2.625 0 100 5.25 2.625 2.625 0 000-5.25z" fill="#262B37"/></mask><g mask="url(#fa)"><path fill="#262B37" d="M0 0h30v30H0z"/></g></symbol>
+		<symbol fill="none" viewBox="0 0 30 30" id="footer-tl" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#474F60"/><mask id="ga" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="22" height="22"><path d="M12.843 20.605l.245-3.701 6.72-6.056c.298-.27-.061-.402-.455-.166l-8.295 5.242-3.587-1.138c-.77-.219-.78-.752.175-1.137l13.973-5.39c.64-.29 1.252.157 1.007 1.137l-2.38 11.209c-.167.796-.648.988-1.313.621l-3.622-2.677-1.742 1.688c-.2.202-.367.368-.726.368z" fill="#262B37"/></mask><g mask="url(#ga)"><path fill="#262B37" d="M0 0h30v30H0z"/></g></symbol>
+		<symbol fill="none" viewBox="0 0 30 30" id="footer-vk" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#474F60"/><mask id="ha" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4" width="22" height="22"><path d="M22.486 11.059c.113-.368 0-.648-.543-.648h-1.767c-.455 0-.657.236-.77.499 0 0-.902 2.196-2.18 3.631-.42.411-.603.543-.83.543-.114 0-.298-.132-.298-.508V11.06c0-.447-.105-.648-.481-.648h-2.791c-.28 0-.447.21-.447.411 0 .42.657.525.7 1.724v2.608c0 .577-.105.682-.323.682-.595 0-2.065-2.214-2.932-4.734-.175-.49-.34-.69-.796-.69H7.252c-.499 0-.604.235-.604.498 0 .472.604 2.8 2.8 5.88 1.461 2.109 3.526 3.246 5.408 3.246 1.128 0 1.268-.254 1.268-.691v-1.593c0-.498.105-.603.464-.603.263 0 .709.13 1.759 1.137 1.207 1.208 1.4 1.75 2.082 1.75h1.768c.507 0 .761-.254.621-.752-.157-.5-.735-1.225-1.496-2.083-.411-.481-1.033-1.006-1.225-1.277-.263-.333-.184-.482 0-.788 0 0 2.161-3.036 2.389-4.077z" fill="#262B37"/></mask><g mask="url(#ha)"><path fill="#262B37" d="M0 0h30v30H0z"/></g></symbol>
 		<symbol viewBox="0 0 16 16" id="in" xmlns="http://www.w3.org/2000/svg"><path d="M11.585 0h-7.17A4.42 4.42 0 000 4.415v7.17A4.42 4.42 0 004.415 16h7.17A4.42 4.42 0 0016 11.585v-7.17A4.42 4.42 0 0011.585 0zm2.995 11.585a3 3 0 01-2.995 2.995h-7.17a3 3 0 01-2.995-2.995v-7.17A3 3 0 014.415 1.42h7.17a3 3 0 012.995 2.995v7.17z" fill="#DBDCE8"/><path d="M8 3.877A4.127 4.127 0 003.877 8 4.127 4.127 0 008 12.123 4.127 4.127 0 0012.123 8 4.127 4.127 0 008 3.877zm0 6.826A2.706 2.706 0 015.297 8 2.706 2.706 0 018 5.297 2.706 2.706 0 0110.703 8 2.706 2.706 0 018 10.703zM12.296 2.674a1.045 1.045 0 00-1.041 1.04c0 .274.111.543.305.737.193.193.462.305.736.305.274 0 .542-.112.736-.305a1.046 1.046 0 000-1.473 1.046 1.046 0 00-.736-.304z" fill="#DBDCE8"/></symbol>
 		<symbol viewBox="0 0 24 24" id="menu-1" xmlns="http://www.w3.org/2000/svg"><path d="M5.333 7h13.334v8.334H5.333V7zm13.334 10a1.667 1.667 0 001.666-1.666V7c0-.925-.75-1.667-1.666-1.667H5.333A1.66 1.66 0 003.667 7v8.334A1.667 1.667 0 005.333 17H2v1.667h20V17h-3.333z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="menu-10" xmlns="http://www.w3.org/2000/svg"><path d="M2.476 3.905h7.62a1.905 1.905 0 013.809 0h7.619V5.81h-.953v10.476h-5.476L16.762 22h-1.905l-1.666-5.714h-2.382L9.143 22H7.238l1.667-5.714H3.429V5.81h-.953V3.905zM5.333 5.81v8.571h13.334V5.81H5.333zm6.524 6.523a.467.467 0 01-.67.004.476.476 0 01-.14-.337V8.19a.476.476 0 01.477-.476c.133 0 .248.057.333.143l1.334 1.324c.304.305.609.61.609.914 0 .305-.305.61-.61.915l-1.333 1.323z"/></symbol>
@@ -134,6 +144,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>dropdown</h2>
 				</li>
+				<li title="facebook">
+					<div class="icon-box">
+						
+						<!-- facebook -->
+						<svg class="svg-facebook-dims">
+							<use xlink:href="#facebook"></use>
+						</svg>
+						
+					</div>
+					<h2>facebook</h2>
+				</li>
 				<li title="fb">
 					<div class="icon-box">
 						
@@ -144,6 +165,50 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>fb</h2>
+				</li>
+				<li title="footer-fb">
+					<div class="icon-box">
+						
+						<!-- footer-fb -->
+						<svg class="svg-footer-fb-dims">
+							<use xlink:href="#footer-fb"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-fb</h2>
+				</li>
+				<li title="footer-insta">
+					<div class="icon-box">
+						
+						<!-- footer-insta -->
+						<svg class="svg-footer-insta-dims">
+							<use xlink:href="#footer-insta"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-insta</h2>
+				</li>
+				<li title="footer-tl">
+					<div class="icon-box">
+						
+						<!-- footer-tl -->
+						<svg class="svg-footer-tl-dims">
+							<use xlink:href="#footer-tl"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-tl</h2>
+				</li>
+				<li title="footer-vk">
+					<div class="icon-box">
+						
+						<!-- footer-vk -->
+						<svg class="svg-footer-vk-dims">
+							<use xlink:href="#footer-vk"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-vk</h2>
 				</li>
 				<li title="in">
 					<div class="icon-box">
@@ -386,6 +451,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>dropdown</h2>
 				</li>
+				<li title="facebook">
+					<div class="icon-box">
+						
+						<!-- facebook -->
+						<svg class="svg-facebook-dims">
+							<use xlink:href="svgsprites.svg#facebook"></use>
+						</svg>
+						
+					</div>
+					<h2>facebook</h2>
+				</li>
 				<li title="fb">
 					<div class="icon-box">
 						
@@ -396,6 +472,50 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>fb</h2>
+				</li>
+				<li title="footer-fb">
+					<div class="icon-box">
+						
+						<!-- footer-fb -->
+						<svg class="svg-footer-fb-dims">
+							<use xlink:href="svgsprites.svg#footer-fb"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-fb</h2>
+				</li>
+				<li title="footer-insta">
+					<div class="icon-box">
+						
+						<!-- footer-insta -->
+						<svg class="svg-footer-insta-dims">
+							<use xlink:href="svgsprites.svg#footer-insta"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-insta</h2>
+				</li>
+				<li title="footer-tl">
+					<div class="icon-box">
+						
+						<!-- footer-tl -->
+						<svg class="svg-footer-tl-dims">
+							<use xlink:href="svgsprites.svg#footer-tl"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-tl</h2>
+				</li>
+				<li title="footer-vk">
+					<div class="icon-box">
+						
+						<!-- footer-vk -->
+						<svg class="svg-footer-vk-dims">
+							<use xlink:href="svgsprites.svg#footer-vk"></use>
+						</svg>
+						
+					</div>
+					<h2>footer-vk</h2>
 				</li>
 				<li title="in">
 					<div class="icon-box">
@@ -603,7 +723,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Thu, 30 Sep 2021 07:29:26 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Thu, 30 Sep 2021 11:11:59 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>
