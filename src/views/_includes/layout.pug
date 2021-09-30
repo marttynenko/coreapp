@@ -1,0 +1,17 @@
+block config
+
+doctype html
+html(lang=__.lang, class="no-js")
+    head
+        block head
+            include head
+    body.body(class=bodyClass)
+        .page-wrapper#page-wrapper
+            include mixins
+            include blocks/header
+            .page-middle#page-middle
+                block content
+            include blocks/footer
+            block scripts-config
+        block scripts
+            include scripts

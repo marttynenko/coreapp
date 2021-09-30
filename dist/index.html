@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Главная :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body class="body">
+    <div class="page-wrapper" id="page-wrapper">
+      <header class="header" id="header">
+        <div class="header__inner">
+          <div class="header__logo"> <img src="./assets/img/logo.svg" alt=""></div>
+          <nav class="header__nav">
+            <div class="nav__link nav__link__drop">Решения</div><a class="nav__link" href="#"> Тарифы</a>
+          </nav>
+          <div class="header__btns"> <a class="header__mail" href="#"> <img src="./assets/img/header/mail.svg" alt=""></a>
+            <div class="header__enter">
+              <button class="btn --blue-full">
+                 Регистрация / Вход</button>
+            </div>
+            <div class="header__menu-toggler" onclick="">
+              <div class="menu-toggler-1"></div>
+              <div class="menu-toggler-2"></div>
+              <div class="menu-toggler-3"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="menu"> 
+        <div class="container">
+          <div class="menu__btns-mobile"> <a class="btn --blue-full">Регистрация / Вход</a><a class="btn --blue-border">Смотреть тарифы</a></div>
+          <div class="row">
+            <div class="col-md-6 col-sm-8 col-xs-12">
+              <div class="menu__title">Решения</div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="menu__col"><a class="menu__link" href="">
+                      <div class="menu__ico"> 
+                              <svg class="svgsprite _menu-1">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#menu-1"></use>
+                              </svg>
+                      </div>
+                      <div class="menu__info">
+                        <div class="menu__link-title">Онлайн-академия</div>
+                        <div class="menu__link-description">Создавайте уроки, курсы и свою программу обучения</div>
+                      </div></a><a class="menu__link" href="">
+                      <div class="menu__ico"> 
+                              <svg class="svgsprite _menu-2">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#menu-2"></use>
+                              </svg>
+                      </div>
+                      <div class="menu__info">
+                        <div class="menu__link-title">Корпоративное обучение</div>
+                        <div class="menu__link-description">Обучайте и тестируйте сотрудников онлайн</div>
+                      </div></a><a class="menu__link" href="">
+                      <div class="menu__ico"> 
+                              <svg class="svgsprite _menu-3">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#menu-3"></use>
+                              </svg>
+                      </div>
+                      <div class="menu__info">
+                        <div class="menu__link-title">Диагностика</div>
+                        <div class="menu__link-description">Проводите исследование аудитории – экономьте время и деньги</div>
+                      </div></a></div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="menu__col"><a class="menu__link" href="">
+                      <div class="menu__ico"> 
+                              <svg class="svgsprite _menu-4">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#menu-4"></use>
+                              </svg>
+                      </div>
+                      <div class="menu__info">
+                        <div class="menu__link-title">Вузам и ИРО</div>
+                        <div class="menu__link-description">Создайте единое цифровое образовательное пространство</div>
+                      </div></a><a class="menu__link" href="">
+                      <div class="menu__ico"> 
+                              <svg class="svgsprite _menu-5">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#menu-5"></use>
+                              </svg>
+                      </div>
+                      <div class="menu__info">
+                        <div class="menu__link-title">Школам</div>
+                        <div class="menu__link-description">Сообщество прогрессивных педагогов</div>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+              <div class="menu__col menu__col-platform">
+                <div class="menu__title">Платформа</div><a class="menu__link" href="">
+                  <div class="menu__ico"> 
+                          <svg class="svgsprite _menu-6">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#menu-6"></use>
+                          </svg>
+                  </div>
+                  <div class="menu__info">
+                    <div class="menu__link-title">Возможности</div>
+                  </div></a><a class="menu__link" href="">
+                  <div class="menu__ico"> 
+                          <svg class="svgsprite _menu-7">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#menu-7"></use>
+                          </svg>
+                  </div>
+                  <div class="menu__info">
+                    <div class="menu__link-title">Библиотека уроков</div>
+                  </div></a><a class="menu__link" href="">
+                  <div class="menu__ico"> 
+                          <svg class="svgsprite _menu-8">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#menu-8"></use>
+                          </svg>
+                  </div>
+                  <div class="menu__info">
+                    <div class="menu__link-title">Обновления</div>
+                  </div></a>
+                <div class="menu__title --padding">Обучаем</div><a class="menu__link" href="">
+                  <div class="menu__ico"> 
+                          <svg class="svgsprite _menu-9">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#menu-9"></use>
+                          </svg>
+                  </div>
+                  <div class="menu__info">
+                    <div class="menu__link-title">Cjournal</div>
+                  </div></a><a class="menu__link" href="">
+                  <div class="menu__ico"> 
+                          <svg class="svgsprite _menu-10">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#menu-10"></use>
+                          </svg>
+                  </div>
+                  <div class="menu__info">
+                    <div class="menu__link-title">Мероприятия</div>
+                  </div></a><a class="menu__link" href="">
+                  <div class="menu__ico"> 
+                          <svg class="svgsprite _menu-11">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#menu-11"></use>
+                          </svg>
+                  </div>
+                  <div class="menu__info">
+                    <div class="menu__link-title">Справочный центр</div>
+                  </div></a>
+              </div>
+            </div>
+            <div class="col-md-3 md-hidden">
+              <div class="menu__right"><img src="./assets/img/header/menu-background.svg" alt="">
+                <div class="menu__right-title">Перенос курса <br>с другой платформы</div>
+                <div class="menu__right-button">
+                  <button class="btn --blue-border --openpopup" data-popup="transfer">Заказать перенос
+                          <svg class="svgsprite _btn-arrow">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                          </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-middle" id="page-middle">
+        <section class="main">
+          <div class="main__pic">
+            <div class="main__pic-bg"><img src="./assets/img/main/2.svg" alt=""></div>
+            <div class="main__pic-animate"><img src="./assets/img/main/3.svg" alt=""></div>
+          </div>
+          <div class="container">
+            <div class="main__tag">С чёткой методологией</div>
+            <div class="main__title">
+              <div class="main__title-txt"> <span class="main__title-platform">Платформа<img class="main__title-platform-img" src="./assets/img/platform.svg" alt="Платформа"></span><br> для онлайн-обучения</div>
+            </div>
+            <div class="main__text">Создавай вовлекающие курсы, проводи вебинары и live-уроки, используй современные гибкие методологии разработки и зарабатывай на своей экспертизе. Построй свой бизнес в онлайн-образовании с CoreApp.</div>
+            <div class="btn-center"> 
+              <div class="btn-arrow"><img src="./assets/img/main/arrow.svg" alt=""></div>
+              <div class="main__btn">
+                <button class="btn --blue-main">
+                   Начать бесплатно</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stats"> 
+          <div class="container"> 
+            <div class="stats__list">
+              <div class="stats__item --blue">
+                <div class="stats__title">70 000+</div>
+                <div class="stats__description">Экспертов</div>
+                <div class="stats__text">Обучают на платформе</div>
+              </div>
+              <div class="stats__item --orange">
+                <div class="stats__title">2 млн+ </div>
+                <div class="stats__description">Человек</div>
+                <div class="stats__text">Проходят обучение ежемесячно</div>
+              </div>
+              <div class="stats__item --green">
+                <div class="stats__title">16 000+</div>
+                <div class="stats__description">Курсов</div>
+                <div class="stats__text">Создано на CoreApp</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video"> 
+          <div class="container"> 
+            <h2 class="video__title">Всё, что нужно для создания лучших курсов на рынке</h2>
+            <div class="video__block"> <img src="./assets/img/main/main-course.jpeg" alt="Всё, что нужно для создания лучших курсов на рынке" loading="lazy"></div>
+            <div class="btn-center"> 
+              <button class="btn --blue-shadow">
+                 Создать свой курс
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="decisions">
+          <div class="container"> 
+            <h2>Решения для онлайн-образования</h2>
+            <div class="row">
+              <div class="col-md-6 col-xs-6 md-order--1">
+                <div class="decisions__item --bg-1">
+                  <div class="decisions__title">Блогерам <br>и обучающим <br>экспертам</div>
+                  <div class="decisions__text">Создавай впечатляющие онлайн-курсы без технических специалистов и нервотрёпки. Начни свой онлайн-бизнес без рисков и переплат</div>
+                  <div class="decisions__btn"> 
+                    <button class="btn --blue-border">
+                       Открыть
+                            <svg class="svgsprite _btn-arrow">
+                              <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                            </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12 md-order-1">
+                <div class="decisions__item --bg-2">
+                  <div class="decisions__title">Крупным онлайн-школам</div>
+                  <div class="decisions__text">Выстраивай независимую и гибкую образовательную экосистему под собственным брендом без ограничений по пользователям</div>
+                  <div class="decisions__btn"> 
+                    <button class="btn --blue-border">
+                       Открыть
+                            <svg class="svgsprite _btn-arrow">
+                              <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                            </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="decisions__item --bg-3">
+                  <div class="decisions__title">Бизнесу</div>
+                  <div class="decisions__text">Создавай образовательное пространство профессионалого роста персонала. Отбор кандидатов, повышение квалификации, онбординг, диагностика, ассессмент.</div>
+                  <div class="decisions__img"> <img src="./assets/img/decisions/5.svg" alt=""></div>
+                  <div class="decisions__btn"> 
+                    <button class="btn --blue-border">
+                       Открыть
+                            <svg class="svgsprite _btn-arrow">
+                              <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                            </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">       
+                <div class="decisions__item --bg-4">
+                  <div class="decisions__img"> <img src="./assets/img/decisions/6.svg" alt=""></div>
+                  <div class="decisions__title">Вузам и ИРО</div>
+                  <div class="decisions__text">Самое время выходить на рынок онлайн-ДПО и осваивать внебюджетные потоки. Интеграция с ФИС ФРДО</div>
+                  <div class="decisions__btn"> 
+                    <button class="btn --blue-border">
+                       Открыть
+                            <svg class="svgsprite _btn-arrow">
+                              <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                            </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6 md-order--1">
+                <div class="decisions__item --bg-5">
+                  <div class="decisions__img"> <img src="./assets/img/decisions/7.png" alt=""></div>
+                  <div class="decisions__title">Репетиторам <br>и консультантам</div>
+                  <div class="decisions__text">Проводи вовлекающие занятия, мастер-классы, вебинары: дистанционно, очно и в смешанном режиме. </div>
+                  <div class="decisions__btn"> 
+                    <button class="btn --blue-border">
+                       Открыть
+                            <svg class="svgsprite _btn-arrow">
+                              <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                            </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="integration"> 
+          <div class="container"> 
+            <div class="h2 integration__title">Интеграции</div>
+            <div class="integration__title-description">Все что нужно для успешного запуска <br>образовательного проекта – уже в CoreApp</div>
+            <div class="integration__pics"><img src="./assets/img/integration/icons.png" alt="Интеграции" loading="lazy"></div>
+            <div class="integration__description --gray"> И ещё <b>10+ интеграций</b> в работе...</div>
+            <div class="integration__description">Создаем интеграции по индивидуальному <br>запросу. Срок – <b>не дольше двух недель!</b> </div>
+            <div class="btn-center">
+              <button class="btn --blue-shadow">Запросить интеграцию
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="ceo"> 
+          <div class="ceo__main"> 
+            <div class="container"> 
+              <div class="ceo__info"> 
+                <h2>Антон Сажин</h2>
+                <div class="ceo__title-description">CEO и основатель образовательной онлайн-платформы CoreApp  </div>
+                <div class="ceo__text">Наш адаптивный онлайн-инструмент помогает пользователям в 80 странах мира! С нами уже работают РУДН, Сбербанк, Банк России, Союзмультфильм, МегаФон, Danone и многие другие. Сотрудничай с CoreApp и становись заметным на рынке онлайн-образования!</div>
+              </div>
+              <div class="ceo__pic"><img src="./assets/img/ceo/ceo.png" alt=""></div>
+            </div>
+          </div>
+          <div class="container"> 
+            <div class="btn-center">
+              <button class="btn --blue-shadow">Протестировать платформу
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="about"> 
+          <div class="container"> 
+            <h2 class="about__title">CoreApp – это конструктор</h2>
+            <div class="about__panel --methodology">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="about__pic"><img src="./assets/img/main/metodology.png" alt="CoreApp" loading="lazy"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="about__info"> 
+                    <h3>Методология</h3>
+                    <div class="about__text">Как удерживать аудиторию, доводить ее до результатов и совершенствовать качество своих продуктов? Лучшие погружаются в методологию. Создавай качественные и результативные онлайн-курсы вместе с профессиональным методологом.</div>
+                    <div class="about__info-btn">
+                      <button class="btn --blue-shadow --openpopup" data-popup="metodology">Арендовать методолога
+                              <svg class="svgsprite _btn-arrow">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                              </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__panel --blocks">
+              <div class="row">
+                <div class="col-md-4 col-sm-5 sm-order-1">
+                  <div class="h3">Блоки и шаблоны для уроков </div>
+                </div>
+                <div class="col-md-8 col-sm-7 sm-order-1">
+                  <div class="about__text">Создавай уроки и курсы с помощью готовых блоков и шаблонов методом переноса. Конструируй и тестируй уроки бесплатно.</div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="about__pics-block">
+                    <div class="about__pic-block about__pic-block-1"><img src="./assets/img/about/2.svg" alt=""></div>
+                    <div class="about__pic-block about__pic-block-2"><img src="./assets/img/about/3.svg" alt="">
+                      <div class="about__pic-animate"> <img src="./assets/img/about/4.svg" alt=""></div>
+                      <div class="about__mouse"><img src="./assets/img/about/mouse.svg" alt=""></div>
+                    </div>
+                    <div class="about__pic-block about__pic-block-3"><img src="./assets/img/about/5.svg" alt=""></div>
+                  </div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="about__info"> 
+                    <div class="about__animate">  
+                      <div class="about__animate-head">
+                        <div class="about__animate-number">1</div>
+                        <div class="about__animate-text">Страница урока</div>
+                      </div>
+                      <div class="about__animate-pic"><img src="./assets/img/about/pic.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__panel --online">
+              <div class="row --aicn">
+                <div class="col-sm-8">
+                  <div class="about__info"> 
+                    <div class="h3">Онлайн-кассы</div>
+                    <div class="about__text">Подключай оплату через аквайринг Робокассы, лендинг на Тильде и саму платформу. Студенты могут приобрести курс прямо на вашем сайте без сторонних сервисов и переплат. Если нет своей онлайн-кассы, мы предоставим свою за день!</div>
+                  </div>
+                </div>
+                <div class="col-sm-4 sm-order--1">
+                  <div class="about__pic"> <img src="./assets/img/about/6.svg" alt="" loading="lazy"></div>
+                </div>
+              </div>
+            </div>
+            <div class="about__panel --work">
+              <div class="row"> 
+                <div class="col-sm-4"> 
+                  <div class="about__pic"> <img class="gif-trigger" src="./assets/img/main/responsive.png" alt="responsive" data-gif="./assets/img/about/7.gif" data-src="./assets/img/main/responsive.png"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="about__info"> 
+                    <div class="h3">Работа на всех устройствах</div>
+                    <div class="about__text">Более 70% учеников CoreApp используют смартфоны во время обучения. Курсы можно адаптировать под любой носитель: смартфон, планшет или компьютер.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__panel --bots">
+              <div class="row --aicn">
+                <div class="col-sm-8"> 
+                  <div class="about__info"> 
+                    <div class="h3">Воронки через чат-ботов</div>
+                    <div class="about__text">Привлекай учеников с помощью чат-ботов из всех социальных сетей и мессенджеров. От простых автоворонок до полной автоматизации вашего взаимодействия с клиентами. </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 sm-order--1">
+                  <div class="about__pic"><img src="./assets/img/about/8.svg" alt="" loading="lazy"></div>
+                </div>
+              </div>
+            </div>
+            <div class="about__panel --storage">
+              <div class="row">
+                <div class="col-sm-4"> 
+                  <div class="about__pic"><img src="./assets/img/about/9.png" alt="" loading="lazy"></div>
+                </div>
+                <div class="col-sm-8">
+                  <div class="about__info"> 
+                    <div class="h3">Безопасное хранение контента</div>
+                    <div class="about__text">Незаконное распространение и скачка видео с платформы невозможны.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__panel --traking">
+              <div class="row"> 
+                <div class="col-sm-8"> 
+                  <div class="about__info"> 
+                    <h3>Трекинг результатов</h3>
+                    <div class="about__text">Отслеживай прогресс и совершенствуй свои курсы, улучшай результаты учеников, влияй на вовлеченность, выстраивай долгосрочные отношения, развивай свой образовательный бренд.</div>
+                  </div>
+                </div>
+                <div class="col-sm-4 sm-order--1">
+                  <div class="about__pic"><img src="./assets/img/about/10.png" alt="" loading="lazy"></div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-center">
+              <button class="btn --blue-shadow about--btn">Начать своё дело
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="add">
+          <div class="container">
+            <div class="add__title">
+              <h2>Создание курса <br>без вложений</h2>
+              <div class="add__title-descr">Бесплатно создавай, тестируй и доводи свой курс до идеала. Плати только за запуск.</div>
+            </div>
+          </div>
+          <div class="add__list">
+            <div class="container">
+              <div class="add__scroll">
+                <div class="add__item">
+                  <div class="add__item-label">Бесплатно</div>
+                  <div class="add__number">01</div>
+                  <div class="add__pic"> <img src="./assets/img/add/1.svg" alt=""></div>
+                  <div class="add__text"><b>Зарегистрируйся</b> <br>и познакомься <br>с платформой</div>
+                </div>
+                <div class="add__item"> 
+                  <div class="add__number">02</div>
+                  <div class="add__pic"> <img src="./assets/img/add/2.svg" alt=""></div>
+                  <div class="add__text">Создай <b>бесконечное</b><br> кол-во уроков</div>
+                </div>
+                <div class="add__item"> 
+                  <div class="add__number">03</div>
+                  <div class="add__pic"> <img src="./assets/img/add/3.svg" alt=""></div>
+                  <div class="add__text"><b>Тестируй</b> <br>и <b>корректируй</b> уроки</div>
+                </div>
+                <div class="add__item"> 
+                  <div class="add__number">04</div>
+                  <div class="add__pic"> <img src="./assets/img/add/4.svg" alt=""></div>
+                  <div class="add__text">Собери курс <br>и <b>подготовь</b> <br><b>его к продаже</b></div>
+                </div>
+                <div class="add__item"> 
+                  <div class="add__item-label --green">Платно</div>
+                  <div class="add__number --green">05</div>
+                  <div class="add__pic"> <img src="./assets/img/add/5.svg" alt=""></div>
+                  <div class="add__text"><b>Запусти курс</b></div>
+                </div>
+                <div class="add__item"> 
+                  <div class="add__number --green">06</div>
+                  <div class="add__pic"> <img src="./assets/img/add/6.svg" alt=""></div>
+                  <div class="add__text">Добавляй учеников к курсу</div>
+                </div>
+                <div class="add__item"> 
+                  <div class="add__number --green">07</div>
+                  <div class="add__pic"> <img src="./assets/img/add/7.svg" alt=""></div>
+                  <div class="add__text">Обучай и анализируй прогресс</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="btn-center"><a class="btn --blue-shadow about--btn" href="#">Начать бесплатно
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg></a></div>
+          </div>
+        </section>
+        <section class="plans"> 
+          <div class="container"> 
+            <h2 class="plans__header">Тарифы</h2>
+            <div class="plans__wrap"> 
+              <div class="plans__item --base">
+                <div class="plans__top">
+                  <div class="plans__title"><img src="./assets/img/plans/base.svg" alt="">Базовый </div>
+                  <div class="plans__description">Для репетиторов<br> и начинающих<br> специалистов</div>
+                  <ul class="plans__list">
+                    <li class="plans__li">Неограниченное кол-во уроков</li>
+                    <li class="plans__li">Индивидуальная обратная связь обучающимся (ДЗ)</li>
+                    <li class="plans__li">Перенос уроков с одного аккаунта на другой</li>
+                    <li class="plans__li">Реализация смешанного обучения (онлайн + очно)</li>
+                    <li class="plans__li">Педагогические шаблоны сборки курса</li>
+                    <li class="plans__li">Конкурсные механики для соцсетей (квесты, челленджи, олимпиады)</li>
+                    <li class="plans__li">Защита видео от скачивания</li>
+                    <li class="plans__li">Сбор статистики по уроку</li>
+                  </ul>
+                </div>
+                <div class="plans__bottom"> 
+                  <div class="plans__price">0 ₽ / месяц</div>
+                  <button class="plans__btn">Выбрать</button>
+                </div>
+              </div>
+              <div class="plans__item --profi">
+                <div class="plans__top">
+                  <div class="plans__title"><img src="./assets/img/plans/profi.svg" alt="">Профи</div>
+                  <div class="plans__description">
+                     Для малого<br> бизнеса
+                    <div class="plans__link"><a href="">Возможности базового тарифа + </a></div>
+                  </div>
+                  <ul class="plans__list">
+                    <li class="plans__li">Приём платежей через онлайн-кассу по 54 ФЗ (подключение за 1 день)</li>
+                    <li class="plans__li">Техподдержка 24/7</li>
+                    <li class="plans__li">Стоп-уроки</li>
+                    <li class="plans__li">Аналитика по курсу и отдельным урокам</li>
+                    <li class="plans__li">Выгрузка отчетов по курсу в формате Excel </li>
+                    <li class="plans__li">Интеграция с чат-ботами Salebot</li>
+                    <li class="plans__li">Защита от покупки «в складчину»</li>
+                    <li class="plans__li">Родная интеграция с Zoom</li>
+                    <li class="plans__li">Количество тьюторов на курсе </li>
+                    <li class="plans__li">Добавление уроков к уже запущенному курсу</li>
+                  </ul>
+                </div>
+                <div class="plans__bottom"> 
+                  <div class="plans__price">от 990 ₽ / мес.</div>
+                  <button class="plans__btn">Выбрать</button>
+                </div>
+              </div>
+              <div class="plans__item --guru --hit">
+                <div class="plans__top">
+                  <div class="plans__title"><img src="./assets/img/plans/guru.svg" alt="">Гуру</div>
+                  <div class="plans__description">
+                     Для крупных компаний<br> и экспертов
+                    <div class="plans__link"><a href="">Возможности тарифа Профи + </a></div>
+                  </div>
+                  <ul class="plans__list">
+                    <li class="plans__li">Запуск марафонов</li>
+                    <li class="plans__li">Свой дизайн курса</li>
+                    <li class="plans__li">Собственный домен</li>
+                  </ul>
+                </div>
+                <div class="plans__bottom"> 
+                  <div class="plans__price">от 11 990 ₽ / месяц</div>
+                  <button class="plans__btn">Выбрать</button>
+                </div>
+              </div>
+              <div class="plans__item --online">
+                <div class="plans__top">
+                  <div class="plans__title"><img src="./assets/img/plans/online.svg" alt="">Онлайн-академия</div>
+                  <div class="plans__description">Для онлайн-школ,<br> вузов и ИРО
+                    <div class="plans__link"><a href="">Возможности тарифа Гуру + </a></div>
+                  </div>
+                  <ul class="plans__list">
+                    <li class="plans__li">Независимая от платформы база пользователей</li>
+                    <li class="plans__li">Персональный менеджер</li>
+                    <li class="plans__li">Рекуррентные платежи</li>
+                    <li class="plans__li">Выдача сертификатов и дипломов</li>
+                    <li class="plans__li">Прием оплаты от юр. лиц</li>
+                    <li class="plans__li">Продвинутая геймификация</li>
+                    <li class="plans__li">Диагностика</li>
+                    <li class="plans__li">Мобильное приложение</li>
+                    <li class="plans__li">Интеграция CRM, рассылок, SAP, 1C, PowerBI</li>
+                  </ul>
+                </div>
+                <div class="plans__bottom"> 
+                  <div class="plans__price">от 30 000 ₽ / месяц</div>
+                  <button class="plans__btn">Выбрать</button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-center"> 
+              <button class="btn --blue-border">Сравнить тарифы</button>
+            </div>
+          </div>
+        </section>
+        <section class="cases"> 
+          <div class="container"> 
+            <h2>Кейсы</h2>
+            <div class="cases__list"> <a class="case" href="#"> 
+                      <div class="case__pic" src="./assets/img/cases/1.svg">
+                        <div class="case__img --dark"> <img src="./assets/img/cases/1.svg" alt="">
+                          <div class="case__circle">
+                                  <svg class="svgsprite _next">
+                                    <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                                  </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="case__title">Онлайн-академия для Digital Dolina</div></a><a class="case" href="#"> 
+                      <div class="case__pic" src="./assets/img/cases/2.svg">
+                        <div class="case__img --gray"> <img src="./assets/img/cases/2.svg" alt="">
+                          <div class="case__circle">
+                                  <svg class="svgsprite _next">
+                                    <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                                  </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="case__title">Онлайн-академия для Digital Dolina</div></a><a class="case" href="#"> 
+                      <div class="case__pic" src="./assets/img/cases/3.svg">
+                        <div class="case__img --red"> <img src="./assets/img/cases/3.svg" alt="">
+                          <div class="case__circle">
+                                  <svg class="svgsprite _next">
+                                    <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                                  </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="case__title">Онлайн-академия для Digital Dolina</div></a><a class="case" href="#"> 
+                      <div class="case__pic" src="./assets/img/cases/1.svg">
+                        <div class="case__img --dark"> <img src="./assets/img/cases/1.svg" alt="">
+                          <div class="case__circle">
+                                  <svg class="svgsprite _next">
+                                    <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                                  </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="case__title">Онлайн-академия для Digital Dolina</div></a><a class="case" href="#"> 
+                      <div class="case__pic" src="./assets/img/cases/1.svg">
+                        <div class="case__img --dark"> <img src="./assets/img/cases/1.svg" alt="">
+                          <div class="case__circle">
+                                  <svg class="svgsprite _next">
+                                    <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                                  </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="case__title">Онлайн-академия для Digital Dolina</div></a><a class="case" href="#"> 
+                      <div class="case__pic" src="./assets/img/cases/1.svg">
+                        <div class="case__img --dark"> <img src="./assets/img/cases/1.svg" alt="">
+                          <div class="case__circle">
+                                  <svg class="svgsprite _next">
+                                    <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                                  </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="case__title">Онлайн-академия для Digital Dolina</div></a>
+            </div>
+          </div>
+        </section>
+        <section class="reports"> 
+          <div class="container"> 
+            <h2>Отзывы о CoreApp</h2>
+            <div class="reports__slider"> 
+              <div class="swiper-wrapper">
+                <div class="swiper-slide report"> 
+                  <div class="report__avatar">
+                    <div class="report__pic"><img src="./assets/img/reports/avatar.png" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="report__info"> 
+                    <div class="report__text">
+                       CoreApp намного быстрее и адаптивнее, чем многие LMS. В <a href="#">Mobile.School </a>учим при помощи телефона, в вертикальном формате при помощи microlearning навыкам, важным для получения профессии. Для нас рулит конструктор drag-and-drop с готовыми блоками и шаблонами — можно насыщать уроки в зависимости от темы курса. Нравится, что подключить учеников легко в одну секунду с телефона или планшета. Плюс — все по одной ссылке.</div>
+                    <div class="report__user"> 
+                      <div class="report__name">Валит Султанов</div>
+                      <div class="report__work">Основатель онлайн-университета мобильных навыков и профессий Mobile.School</div>
+                    </div><a class="report__link" href="#"> Открыть кейс →</a>
+                  </div>
+                </div>
+                <div class="swiper-slide report"> 
+                  <div class="report__avatar">
+                    <div class="report__pic"><img src="./assets/img/reports/avatar.png" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="report__info"> 
+                    <div class="report__text">
+                       CoreApp намного быстрее и адаптивнее, чем многие LMS. В <a href="#">Mobile.School </a>учим при помощи телефона, в вертикальном формате при помощи microlearning навыкам, важным для получения профессии. Для нас рулит конструктор drag-and-drop с готовыми блоками и шаблонами — можно насыщать уроки в зависимости от темы курса. Нравится, что подключить учеников легко в одну секунду с телефона или планшета. Плюс — все по одной ссылке.</div>
+                    <div class="report__user"> 
+                      <div class="report__name">Валит Султанов</div>
+                      <div class="report__work">Основатель онлайн-университета мобильных навыков и профессий Mobile.School</div>
+                    </div><a class="report__link" href="#"> Открыть кейс →</a>
+                  </div>
+                </div>
+                <div class="swiper-slide report"> 
+                  <div class="report__avatar">
+                    <div class="report__pic"><img src="./assets/img/reports/avatar.png" alt="" loading="lazy"></div>
+                  </div>
+                  <div class="report__info"> 
+                    <div class="report__text">
+                       CoreApp намного быстрее и адаптивнее, чем многие LMS. В <a href="#">Mobile.School </a>учим при помощи телефона, в вертикальном формате при помощи microlearning навыкам, важным для получения профессии. Для нас рулит конструктор drag-and-drop с готовыми блоками и шаблонами — можно насыщать уроки в зависимости от темы курса. Нравится, что подключить учеников легко в одну секунду с телефона или планшета. Плюс — все по одной ссылке.</div>
+                    <div class="report__user"> 
+                      <div class="report__name">Валит Султанов</div>
+                      <div class="report__work">Основатель онлайн-университета мобильных навыков и профессий Mobile.School</div>
+                    </div><a class="report__link" href="#"> Открыть кейс →</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev report__nav-button">
+                      <svg class="svgsprite _prev">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#prev"></use>
+                      </svg>
+              </div>
+              <div class="swiper-button-next report__nav-button">
+                      <svg class="svgsprite _next">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                      </svg>
+              </div>
+            </div>
+            <div class="btn-center"> 
+              <button class="btn --blue-shadow">Зарегистрироваться
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="news"> 
+          <div class="container"> 
+            <h2>СМИ о нас</h2>
+            <div class="news__list"><a class="news__item" href="#"> 
+                <div class="news__pic" style="background-image: url(./assets/img/news/1.jpg);"></div>
+                <div class="news__title">Моя миссия — помочь инфобесам стать инфоангелами</div>
+                <div class="news__link">Подробнее →</div></a><a class="news__item" href="#"> 
+                <div class="news__pic" style="background-image: url(./assets/img/news/1.jpg);"></div>
+                <div class="news__title">Моя миссия — помочь инфобесам стать инфоангелами</div>
+                <div class="news__link">Подробнее →</div></a><a class="news__item" href="#"> 
+                <div class="news__pic" style="background-image: url(./assets/img/news/1.jpg);"></div>
+                <div class="news__title">Моя миссия — помочь инфобесам стать инфоангелами</div>
+                <div class="news__link">Подробнее →</div></a><a class="news__item" href="#"> 
+                <div class="news__pic" style="background-image: url(./assets/img/news/1.jpg);"></div>
+                <div class="news__title">Моя миссия — помочь инфобесам стать инфоангелами</div>
+                <div class="news__link">Подробнее →</div></a><a class="news__item" href="#"> 
+                <div class="news__pic" style="background-image: url(./assets/img/news/1.jpg);"></div>
+                <div class="news__title">Моя миссия — помочь инфобесам стать инфоангелами</div>
+                <div class="news__link">Подробнее →</div></a></div>
+          </div>
+        </section>
+        <section class="faq"> 
+          <div class="container"> 
+            <h2>Остались вопросы?</h2>
+            <div class="faq__list">
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">Чем CoreApp отличается от других платформ по запуску курсов?
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">Есть ли ограничения по количеству уроков/материалов внутри онлайн-курса, с которыми я столкнусь?
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">Как повысить доходимость курсов с помощью CoreApp?
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">Использование СoreApp с мобильных устройств
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">Тарифы: как оплатить выбранный тариф и чем выгодна годовая подписка?
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">В чем отличие урока на CoreApp от курса на CoreApp?
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+                    <div class="accardeon"> 
+                      <div class="accardeon__main">Как вы защищаете персональные данные и контент?
+                        <div class="accardeon__ico"> 
+                                <svg class="svgsprite _plus">
+                                  <use xlink:href="assets/img/sprites/svgsprites.svg#plus"></use>
+                                </svg>
+                        </div>
+                      </div>
+                      <div class="accardeon__drop">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!</p>
+                      </div>
+                    </div>
+            </div>
+            <div class="btn-center"> 
+              <button class="btn --blue-border">Справочный центр
+                      <svg class="svgsprite _btn-arrow">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                      </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="speed">
+          <div class="container">
+            <div class="speed__wrap">
+              <div class="speed__pic"><img class="speed__gif gif-trigger" src="./assets/img/main/speed.png" alt="speed" data-gif="./assets/img/speed/speed.gif" loading="lazy"><img class="speed__avatar" src="./assets/img/speed/speed__avatar.png" alt="avatar" loading="lazy"></div>
+              <div class="speed__info"> 
+                <div class="title-bluelines speed__title">
+                  <p class="title-blueline"> <span>Улучшай</span></p><br>
+                  <p class="title-blueline"> <span>продукт</span></p>
+                  <p>с CoreApp</p>
+                </div>
+                <button class="btn --blue-full">Зарегистрироваться</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="popup" data-popup="transfer">
+        <div class="popup__bg"></div>
+        <form class="popup__panel"> 
+          <div class="popup__title">Перенос курса с другой платформы</div>
+          <div class="popup__input"> 
+            <input type="text" placeholder="Email">
+            <div class="input__description">Почта введена правильно</div>
+          </div>
+          <div class="btn-center">
+            <button class="btn --blue-shadow">Заказать перенос
+                    <svg class="svgsprite _btn-arrow">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                    </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="popup" data-popup="metodology">
+        <div class="popup__bg"></div>
+        <form class="popup__panel"> 
+          <div class="popup__title">Арендовать методолога</div>
+          <div class="popup__input"> 
+            <input type="text" placeholder="Email">
+            <div class="input__description">Почта введена правильно</div>
+          </div>
+          <div class="btn-center">
+            <button class="btn --blue-shadow">Почта введена правильно
+                    <svg class="svgsprite _btn-arrow">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                    </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="popup" data-popup="bots">
+        <div class="popup__bg"></div>
+        <form class="popup__panel"> 
+          <div class="popup__title">Разработка маркетинговой воронки для чат-ботов и рассылок</div>
+          <div class="popup__input"> 
+            <input type="text" placeholder="Email">
+            <div class="input__description">Почта введена правильно</div>
+          </div>
+          <div class="btn-center">
+            <button class="btn --blue-shadow">Заказать воронку
+                    <svg class="svgsprite _btn-arrow">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                    </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="popup" data-popup="analtic">
+        <div class="popup__bg"></div>
+        <form class="popup__panel"> 
+          <div class="popup__title">Подключение бизнес-аналитики PowerBi</div>
+          <div class="popup__input"> 
+            <input type="text" placeholder="Email">
+            <div class="input__description">Почта введена правильно</div>
+          </div>
+          <div class="btn-center">
+            <button class="btn --blue-shadow">Подключить бизнес-аналитику
+                    <svg class="svgsprite _btn-arrow">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#btn-arrow"></use>
+                    </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>

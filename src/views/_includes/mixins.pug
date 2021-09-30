@@ -1,0 +1,20 @@
+mixin svgsprite(name)
+  svg(class="svgsprite _" + name)&attributes(attributes)
+    use(xlink:href="assets/img/sprites/svgsprites.svg#" + name)
+mixin accardeon(title, text)
+  .accardeon 
+    .accardeon__main=title
+      .accardeon__ico 
+        +svgsprite('plus')
+    .accardeon__drop
+      p=text 
+      p=text
+      p=text
+mixin case(src, title)
+  a.case(href="#") 
+    .case__pic(src=src)
+      .case__img&attributes(attributes) 
+        img(src=src, alt="")
+        .case__circle
+          +svgsprite('next')
+    .case__title=title

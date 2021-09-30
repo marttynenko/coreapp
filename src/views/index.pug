@@ -1,0 +1,488 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'Главная'
+  - var bodyClass = ''
+block content
+  section.main
+    .main__pic
+      .main__pic-bg
+        img(src="./assets/img/main/2.svg", alt="")
+      .main__pic-animate
+        img(src="./assets/img/main/3.svg", alt="")
+    .container
+      .main__tag С чёткой методологией
+      .main__title
+        .main__title-txt 
+          span.main__title-platform Платформа
+            img.main__title-platform-img(src="./assets/img/platform.svg", alt="Платформа")
+          | <br> для онлайн-обучения
+      .main__text Создавай вовлекающие курсы, проводи вебинары и live-уроки, используй современные гибкие методологии разработки и зарабатывай на своей экспертизе. Построй свой бизнес в онлайн-образовании с CoreApp.
+      .btn-center 
+        .btn-arrow
+          img(src="./assets/img/main/arrow.svg", alt="")
+        .main__btn
+          button.btn.--blue-main 
+            | Начать бесплатно
+  section.stats 
+    .container 
+      .stats__list
+        .stats__item.--blue
+          .stats__title 70 000+
+          .stats__description Экспертов
+          .stats__text Обучают на платформе
+        .stats__item.--orange
+          .stats__title 2 млн+ 
+          .stats__description Человек
+          .stats__text Проходят обучение ежемесячно
+        .stats__item.--green
+          .stats__title 16 000+
+          .stats__description Курсов
+          .stats__text Создано на CoreApp
+
+
+  section.video 
+    .container 
+      h2.video__title Всё, что нужно для создания лучших курсов на рынке
+      .video__block 
+        img(src="./assets/img/main/main-course.jpeg", alt="Всё, что нужно для создания лучших курсов на рынке", loading="lazy")
+      .btn-center 
+        button.btn.--blue-shadow 
+          | Создать свой курс
+          +svgsprite('btn-arrow')
+  section.decisions
+    .container 
+      h2 Решения для онлайн-образования
+      .row
+        .col-md-6.col-xs-6.md-order--1
+          .decisions__item.--bg-1
+            .decisions__title Блогерам <br>и обучающим <br>экспертам
+            .decisions__text Создавай впечатляющие онлайн-курсы без технических специалистов и нервотрёпки. Начни свой онлайн-бизнес без рисков и переплат
+            .decisions__btn 
+              button.btn.--blue-border 
+                | Открыть
+                +svgsprite('btn-arrow')
+        
+        .col-md-6.col-xs-12.md-order-1
+          .decisions__item.--bg-2
+            .decisions__title Крупным онлайн-школам
+            .decisions__text Выстраивай независимую и гибкую образовательную экосистему под собственным брендом без ограничений по пользователям
+            .decisions__btn 
+              button.btn.--blue-border 
+                | Открыть
+                +svgsprite('btn-arrow')
+        .col-md-4.col-xs-6
+          .decisions__item.--bg-3
+            .decisions__title Бизнесу
+            .decisions__text Создавай образовательное пространство профессионалого роста персонала. Отбор кандидатов, повышение квалификации, онбординг, диагностика, ассессмент.
+            .decisions__img 
+              img(src="./assets/img/decisions/5.svg", alt="")
+            .decisions__btn 
+              button.btn.--blue-border 
+                | Открыть
+                +svgsprite('btn-arrow')
+
+        .col-md-4.col-xs-6        
+          .decisions__item.--bg-4
+            .decisions__img 
+              img(src="./assets/img/decisions/6.svg", alt="")
+            .decisions__title Вузам и ИРО
+            .decisions__text Самое время выходить на рынок онлайн-ДПО и осваивать внебюджетные потоки. Интеграция с ФИС ФРДО
+            .decisions__btn 
+              button.btn.--blue-border 
+                | Открыть
+                +svgsprite('btn-arrow')
+
+        .col-md-4.col-xs-6.md-order--1
+          .decisions__item.--bg-5
+            .decisions__img 
+              img(src="./assets/img/decisions/7.png", alt="")
+            .decisions__title Репетиторам <br>и консультантам
+            .decisions__text Проводи вовлекающие занятия, мастер-классы, вебинары: дистанционно, очно и в смешанном режиме. 
+            .decisions__btn 
+              button.btn.--blue-border 
+                | Открыть
+                +svgsprite('btn-arrow')
+
+  section.integration 
+    .container 
+      .h2.integration__title Интеграции
+      .integration__title-description Все что нужно для успешного запуска <br>образовательного проекта – уже в CoreApp
+      .integration__pics
+        img(src="./assets/img/integration/icons.png", alt="Интеграции", loading="lazy")
+      .integration__description.--gray  И ещё <b>10+ интеграций</b> в работе...
+      .integration__description Создаем интеграции по индивидуальному <br>запросу. Срок – <b>не дольше двух недель!</b> 
+      .btn-center
+        button.btn.--blue-shadow
+          | Запросить интеграцию
+          +svgsprite('btn-arrow')
+  section.ceo 
+    .ceo__main 
+      .container 
+        .ceo__info 
+          h2 Антон Сажин
+          .ceo__title-description CEO и основатель образовательной онлайн-платформы CoreApp  
+          .ceo__text Наш адаптивный онлайн-инструмент помогает пользователям в 80 странах мира! С нами уже работают РУДН, Сбербанк, Банк России, Союзмультфильм, МегаФон, Danone и многие другие. Сотрудничай с CoreApp и становись заметным на рынке онлайн-образования!
+        .ceo__pic
+          img(src="./assets/img/ceo/ceo.png", alt="")
+    .container 
+      .btn-center
+        button.btn.--blue-shadow
+          | Протестировать платформу
+          +svgsprite('btn-arrow')
+
+  section.about 
+    .container 
+      h2.about__title CoreApp – это конструктор
+      .about__panel.--methodology
+        .row
+          .col-sm-4
+            .about__pic
+              img(src="./assets/img/main/metodology.png", alt="CoreApp", loading="lazy")
+          .col-sm-8
+            .about__info 
+              h3 Методология
+              .about__text Как удерживать аудиторию, доводить ее до результатов и совершенствовать качество своих продуктов? Лучшие погружаются в методологию. Создавай качественные и результативные онлайн-курсы вместе с профессиональным методологом.
+              .about__info-btn
+                button.btn.--blue-shadow.--openpopup(data-popup="metodology")
+                  | Арендовать методолога
+                  +svgsprite('btn-arrow')
+        
+      .about__panel.--blocks
+        .row
+          .col-md-4.col-sm-5.sm-order-1
+            .h3 Блоки и шаблоны для уроков 
+          .col-md-8.col-sm-7.sm-order-1
+            .about__text Создавай уроки и курсы с помощью готовых блоков и шаблонов методом переноса. Конструируй и тестируй уроки бесплатно.
+          .col-sm-4
+            .about__pics-block
+              .about__pic-block.about__pic-block-1
+                img(src="./assets/img/about/2.svg", alt="")
+              .about__pic-block.about__pic-block-2
+                img(src="./assets/img/about/3.svg", alt="")
+                .about__pic-animate 
+                  img(src="./assets/img/about/4.svg", alt="")
+                .about__mouse
+                  img(src="./assets/img/about/mouse.svg", alt="")
+              .about__pic-block.about__pic-block-3
+                img(src="./assets/img/about/5.svg", alt="")
+          .col-sm-8
+            .about__info 
+              .about__animate   
+                .about__animate-head
+                  .about__animate-number 1
+                  .about__animate-text Страница урока
+                .about__animate-pic
+                  img(src="./assets/img/about/pic.jpg", alt="")
+        
+      .about__panel.--online
+        .row.--aicn
+          .col-sm-8
+            .about__info 
+              .h3 Онлайн-кассы
+              .about__text Подключай оплату через аквайринг Робокассы, лендинг на Тильде и саму платформу. Студенты могут приобрести курс прямо на вашем сайте без сторонних сервисов и переплат. Если нет своей онлайн-кассы, мы предоставим свою за день!
+          .col-sm-4.sm-order--1
+            .about__pic 
+              img(src="./assets/img/about/6.svg", alt="", loading="lazy")
+        
+        
+      .about__panel.--work
+        .row 
+          .col-sm-4 
+            .about__pic 
+              img.gif-trigger(src="./assets/img/main/responsive.png", alt="responsive", data-gif="./assets/img/about/7.gif", data-src="./assets/img/main/responsive.png")
+          .col-sm-8
+            .about__info 
+              .h3 Работа на всех устройствах
+              .about__text Более 70% учеников CoreApp используют смартфоны во время обучения. Курсы можно адаптировать под любой носитель: смартфон, планшет или компьютер.
+        
+      .about__panel.--bots
+        .row.--aicn
+          .col-sm-8 
+            .about__info 
+              .h3 Воронки через чат-ботов
+              .about__text Привлекай учеников с помощью чат-ботов из всех социальных сетей и мессенджеров. От простых автоворонок до полной автоматизации вашего взаимодействия с клиентами. 
+          .col-sm-4.sm-order--1
+            .about__pic
+              img(src="./assets/img/about/8.svg", alt="", loading="lazy")
+        
+        
+      .about__panel.--storage
+        .row
+          .col-sm-4 
+            .about__pic
+              img(src="./assets/img/about/9.png", alt="" loading="lazy")
+          .col-sm-8
+            .about__info 
+              .h3 Безопасное хранение контента
+              .about__text Незаконное распространение и скачка видео с платформы невозможны.
+        
+        
+      .about__panel.--traking
+        .row 
+          .col-sm-8 
+            .about__info 
+              h3 Трекинг результатов
+              .about__text Отслеживай прогресс и совершенствуй свои курсы, улучшай результаты учеников, влияй на вовлеченность, выстраивай долгосрочные отношения, развивай свой образовательный бренд.
+          .col-sm-4.sm-order--1
+            .about__pic
+              img(src="./assets/img/about/10.png", alt="", loading="lazy")
+        
+      .btn-center
+        button.btn.--blue-shadow.about--btn
+          | Начать своё дело
+          +svgsprite('btn-arrow')
+
+  section.add
+    .container
+      .add__title
+        h2 Создание курса <br>без вложений
+        .add__title-descr Бесплатно создавай, тестируй и доводи свой курс до идеала. Плати только за запуск.
+    .add__list
+      .container
+        .add__scroll
+          .add__item
+            .add__item-label Бесплатно
+            .add__number 01
+            .add__pic 
+              img(src="./assets/img/add/1.svg", alt="")
+            .add__text <b>Зарегистрируйся</b> <br>и познакомься <br>с платформой
+          .add__item 
+            .add__number 02
+            .add__pic 
+              img(src="./assets/img/add/2.svg", alt="")
+            .add__text Создай <b>бесконечное</b><br> кол-во уроков
+          .add__item 
+            .add__number 03
+            .add__pic 
+              img(src="./assets/img/add/3.svg", alt="")
+            .add__text <b>Тестируй</b> <br>и <b>корректируй</b> уроки
+          .add__item 
+            .add__number 04
+            .add__pic 
+              img(src="./assets/img/add/4.svg", alt="")
+            .add__text Собери курс <br>и <b>подготовь</b> <br><b>его к продаже</b>
+          .add__item 
+            .add__item-label.--green Платно
+            .add__number.--green 05
+            .add__pic 
+              img(src="./assets/img/add/5.svg", alt="")
+            .add__text <b>Запусти курс</b>
+          .add__item 
+            .add__number.--green 06
+            .add__pic 
+              img(src="./assets/img/add/6.svg", alt="")
+            .add__text Добавляй учеников к курсу
+          .add__item 
+            .add__number.--green 07
+            .add__pic 
+              img(src="./assets/img/add/7.svg", alt="")
+            .add__text Обучай и анализируй прогресс
+    .container
+      .btn-center
+        a.btn.--blue-shadow.about--btn(href="#")
+          | Начать бесплатно
+          +svgsprite('btn-arrow')
+
+  section.plans 
+    .container 
+      h2.plans__header Тарифы
+      .plans__wrap 
+        .plans__item.--base
+          .plans__top
+            .plans__title
+              img(src="./assets/img/plans/base.svg", alt="") 
+              | Базовый 
+            .plans__description Для репетиторов<br> и начинающих<br> специалистов
+            ul.plans__list
+              li.plans__li Неограниченное кол-во уроков
+              li.plans__li Индивидуальная обратная связь обучающимся (ДЗ)
+              li.plans__li Перенос уроков с одного аккаунта на другой
+              li.plans__li Реализация смешанного обучения (онлайн + очно)
+              li.plans__li Педагогические шаблоны сборки курса
+              li.plans__li Конкурсные механики для соцсетей (квесты, челленджи, олимпиады)
+              li.plans__li Защита видео от скачивания
+              li.plans__li Сбор статистики по уроку
+          .plans__bottom 
+            .plans__price 0 ₽ / месяц
+            button.plans__btn Выбрать
+        .plans__item.--profi
+          .plans__top
+            .plans__title
+              img(src="./assets/img/plans/profi.svg", alt="") 
+              | Профи
+            .plans__description 
+              | Для малого<br> бизнеса
+              .plans__link
+                a(href="") Возможности базового тарифа + 
+            ul.plans__list
+              li.plans__li Приём платежей через онлайн-кассу по 54 ФЗ (подключение за 1 день)
+              li.plans__li Техподдержка 24/7
+              li.plans__li Стоп-уроки
+              li.plans__li Аналитика по курсу и отдельным урокам
+              li.plans__li Выгрузка отчетов по курсу в формате Excel 
+              li.plans__li Интеграция с чат-ботами Salebot
+              li.plans__li Защита от покупки «в складчину»
+              li.plans__li Родная интеграция с Zoom
+              li.plans__li Количество тьюторов на курсе 
+              li.plans__li Добавление уроков к уже запущенному курсу
+          .plans__bottom 
+            .plans__price от 990 ₽ / мес.
+            button.plans__btn Выбрать
+        .plans__item.--guru.--hit
+          .plans__top
+            .plans__title
+              img(src="./assets/img/plans/guru.svg", alt="") 
+              | Гуру
+            .plans__description 
+              | Для крупных компаний<br> и экспертов
+              .plans__link
+                a(href="") Возможности тарифа Профи + 
+            ul.plans__list
+              li.plans__li Запуск марафонов
+              li.plans__li Свой дизайн курса
+              li.plans__li Собственный домен
+          .plans__bottom 
+            .plans__price от 11 990 ₽ / месяц
+            button.plans__btn Выбрать
+        .plans__item.--online
+          .plans__top
+            .plans__title
+              img(src="./assets/img/plans/online.svg", alt="") 
+              | Онлайн-академия
+            .plans__description
+              | Для онлайн-школ,<br> вузов и ИРО
+              .plans__link
+                a(href="") Возможности тарифа Гуру + 
+            ul.plans__list
+              li.plans__li Независимая от платформы база пользователей
+              li.plans__li Персональный менеджер
+              li.plans__li Рекуррентные платежи
+              li.plans__li Выдача сертификатов и дипломов
+              li.plans__li Прием оплаты от юр. лиц
+              li.plans__li Продвинутая геймификация
+              li.plans__li Диагностика
+              li.plans__li Мобильное приложение
+              li.plans__li Интеграция CRM, рассылок, SAP, 1C, PowerBI
+          .plans__bottom 
+            .plans__price от 30 000 ₽ / месяц
+            button.plans__btn Выбрать
+      .btn-center 
+        button.btn.--blue-border Сравнить тарифы
+  section.cases 
+    .container 
+      h2 Кейсы
+      .cases__list 
+        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
+        +case('./assets/img/cases/2.svg', 'Онлайн-академия для Digital Dolina')(class="--gray")
+        +case('./assets/img/cases/3.svg', 'Онлайн-академия для Digital Dolina')(class="--red")
+        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
+        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
+        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
+
+  section.reports 
+    .container 
+      h2 Отзывы о CoreApp
+      .reports__slider 
+        .swiper-wrapper
+          .swiper-slide.report 
+            .report__avatar
+              .report__pic
+                img(src="./assets/img/reports/avatar.png", alt="", loading="lazy")
+            .report__info 
+              .report__text 
+                | CoreApp намного быстрее и адаптивнее, чем многие LMS. В 
+                a(href="#") Mobile.School 
+                | учим при помощи телефона, в вертикальном формате при помощи microlearning навыкам, важным для получения профессии. Для нас рулит конструктор drag-and-drop с готовыми блоками и шаблонами — можно насыщать уроки в зависимости от темы курса. Нравится, что подключить учеников легко в одну секунду с телефона или планшета. Плюс — все по одной ссылке.
+              .report__user 
+                .report__name Валит Султанов
+                .report__work Основатель онлайн-университета мобильных навыков и профессий Mobile.School
+              a.report__link(href="#")  Открыть кейс →
+          .swiper-slide.report 
+            .report__avatar
+              .report__pic
+                img(src="./assets/img/reports/avatar.png", alt="", loading="lazy")
+            .report__info 
+              .report__text 
+                | CoreApp намного быстрее и адаптивнее, чем многие LMS. В 
+                a(href="#") Mobile.School 
+                | учим при помощи телефона, в вертикальном формате при помощи microlearning навыкам, важным для получения профессии. Для нас рулит конструктор drag-and-drop с готовыми блоками и шаблонами — можно насыщать уроки в зависимости от темы курса. Нравится, что подключить учеников легко в одну секунду с телефона или планшета. Плюс — все по одной ссылке.
+              .report__user 
+                .report__name Валит Султанов
+                .report__work Основатель онлайн-университета мобильных навыков и профессий Mobile.School
+              a.report__link(href="#")  Открыть кейс →
+          .swiper-slide.report 
+            .report__avatar
+              .report__pic
+                img(src="./assets/img/reports/avatar.png", alt="", loading="lazy")
+            .report__info 
+              .report__text 
+                | CoreApp намного быстрее и адаптивнее, чем многие LMS. В 
+                a(href="#") Mobile.School 
+                | учим при помощи телефона, в вертикальном формате при помощи microlearning навыкам, важным для получения профессии. Для нас рулит конструктор drag-and-drop с готовыми блоками и шаблонами — можно насыщать уроки в зависимости от темы курса. Нравится, что подключить учеников легко в одну секунду с телефона или планшета. Плюс — все по одной ссылке.
+              .report__user 
+                .report__name Валит Султанов
+                .report__work Основатель онлайн-университета мобильных навыков и профессий Mobile.School
+              a.report__link(href="#")  Открыть кейс →
+        .swiper-button-prev.report__nav-button
+          +svgsprite('prev')
+        .swiper-button-next.report__nav-button
+          +svgsprite('next')
+      .btn-center 
+        button.btn.--blue-shadow
+          | Зарегистрироваться
+          +svgsprite('btn-arrow')
+  section.news 
+    .container 
+      h2 СМИ о нас
+      .news__list
+        a.news__item(href="#") 
+          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
+          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__link Подробнее →
+        a.news__item(href="#") 
+          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
+          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__link Подробнее →
+        a.news__item(href="#") 
+          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
+          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__link Подробнее →
+        a.news__item(href="#") 
+          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
+          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__link Подробнее →
+        a.news__item(href="#") 
+          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
+          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__link Подробнее →
+  section.faq 
+    .container 
+      h2 Остались вопросы?
+      .faq__list
+        +accardeon('Чем CoreApp отличается от других платформ по запуску курсов?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        +accardeon('Есть ли ограничения по количеству уроков/материалов внутри онлайн-курса, с которыми я столкнусь?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        +accardeon('Как повысить доходимость курсов с помощью CoreApp?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        +accardeon('Использование СoreApp с мобильных устройств', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        +accardeon('Тарифы: как оплатить выбранный тариф и чем выгодна годовая подписка?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        +accardeon('В чем отличие урока на CoreApp от курса на CoreApp?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        +accardeon('Как вы защищаете персональные данные и контент?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+      .btn-center 
+        button.btn.--blue-border
+          | Справочный центр
+          +svgsprite('btn-arrow')
+  section.speed
+    .container
+      .speed__wrap
+        .speed__pic
+          img.speed__gif.gif-trigger(src="./assets/img/main/speed.png", alt="speed", data-gif="./assets/img/speed/speed.gif", loading="lazy") 
+          img.speed__avatar(src="./assets/img/speed/speed__avatar.png", alt="avatar", loading="lazy") 
+        .speed__info 
+          .title-bluelines.speed__title
+            p.title-blueline 
+              span Улучшай
+            <br>
+            p.title-blueline 
+              span продукт
+            p с CoreApp
+          button.btn.--blue-full Зарегистрироваться

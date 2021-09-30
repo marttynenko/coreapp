@@ -1,0 +1,477 @@
+extends _includes/layout
+
+block config
+  - var pagetitle = 'plans'
+  - var bodyClass = ''
+block content
+  section.plans-page
+    .container
+      h3 Тарифы
+      
+      .plans-cards 
+        .plans-card__item.--base 
+          .plans-card__title 
+            img(src="./assets/img/plans/base.svg", alt="") 
+            | Базовый
+          .plans-card__description Для репетиторов и начинающих специалистов
+          .plans-card__price 0 ₽/мес.
+        .plans-card__item
+          .plans-card__title 
+            img(src="./assets/img/plans/profi.svg", alt="") 
+            | Профи
+          .plans-card__description Для малого бизнеса
+          .plans-card__price.--profi от 990 ₽/мес.
+        .plans-card__item.--profi
+          .plans-card__title 
+            img(src="./assets/img/plans/guru.svg", alt="") 
+            | Гуру
+          .plans-card__description Для крупных компаний и экспертов
+          .plans-card__price.--guru  от 11 990 ₽/мес.
+        .plans-card__item.--online 
+          .plans-card__title 
+            img(src="./assets/img/plans/online.svg", alt="") 
+            | Онлайн академия
+          .plans-card__description Для онлайн-школ, вузов и ИРО
+          .plans-card__price.--online от 30 000 ₽/мес.
+
+      .plans__table-wrap
+        .plans__table
+          .plans-page__block 
+            h4 Образовательный процесс
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных уроков
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--profi 
+                  .plans-page__text Неограниченно
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text 0
+                .plans-page__item.--profi 
+                  .plans-page__text 1-10
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Автоматическая и ручная проверка домашних заданий
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Реализация смешанного обучения (онлайн, очно и дистанционно)
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Конструктор контента с 15+ интерактивными инструментами
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Выгрузка отчётов по уроку и курсу в Excel-формате
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Проведение вебинаров с помощью ZOOM
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Запуск синхронных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plnas-page__bottom 
+              h4 Методологический апгрейд курса
+              button.btn.--blue-shadow.--openpopup(data-popup="metodology")
+                | Арендовать методолога
+                +svgsprite('btn-arrow')
+          .plans-page__block 
+            h4 Управление контентом
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных уроков
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--profi 
+                  .plans-page__text Неограниченно
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text 0
+                .plans-page__item.--profi 
+                  .plans-page__text 1-10
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Автоматическая и ручная проверка домашних заданий
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Реализация смешанного обучения (онлайн, очно и дистанционно)
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Конструктор контента с 15+ интерактивными инструментами
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Выгрузка отчётов по уроку и курсу в Excel-формате
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Проведение вебинаров с помощью ZOOM
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Запуск синхронных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plnas-page__bottom 
+              h4 Перенос курса с другой платформы
+              button.btn.--blue-shadow.--openpopup(data-popup="transfer")
+                | Заказать перенос
+                +svgsprite('btn-arrow')
+          .plans-page__block 
+            h4 Маркетинг и платежи
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных уроков
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--profi 
+                  .plans-page__text Неограниченно
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text 0
+                .plans-page__item.--profi 
+                  .plans-page__text 1-10
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Автоматическая и ручная проверка домашних заданий
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Реализация смешанного обучения (онлайн, очно и дистанционно)
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Конструктор контента с 15+ интерактивными инструментами
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Выгрузка отчётов по уроку и курсу в Excel-формате
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Проведение вебинаров с помощью ZOOM
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Запуск синхронных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plnas-page__bottom 
+              h4 Разработка маркетинговой воронки для чат-ботов и рассылок
+              button.btn.--blue-shadow.--openpopup(data-popup="bots")
+                | Заказать воронку
+                +svgsprite('btn-arrow')
+          .plans-page__block 
+            h4 Кастомизация
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных уроков
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--profi 
+                  .plans-page__text Неограниченно
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Количество активных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__text 0
+                .plans-page__item.--profi 
+                  .plans-page__text 1-10
+                .plans-page__item.--guru  
+                  .plans-page__text Неограниченно
+                .plans-page__item.--online 
+                  .plans-page__text Неограниченно
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Автоматическая и ручная проверка домашних заданий
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Реализация смешанного обучения (онлайн, очно и дистанционно)
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Конструктор контента с 15+ интерактивными инструментами
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Выгрузка отчётов по уроку и курсу в Excel-формате
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__check
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Проведение вебинаров с помощью ZOOM
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plans-page__flex
+              .plans-page__left
+                .plans-page__name Запуск синхронных курсов
+              .plans-page__right
+                .plans-page__item.--base  
+                  .plans-page__none
+                .plans-page__item.--profi 
+                  .plans-page__check
+                .plans-page__item.--guru  
+                  .plans-page__check
+                .plans-page__item.--online 
+                  .plans-page__check
+            .plnas-page__bottom 
+              .h4 Подключение бизнес-аналитики PowerBi
+              button.btn.--blue-shadow.--openpopup(data-popup="analtic")
+                | Подключить бизнес-аналитику
+                +svgsprite('btn-arrow')
+
+
+      .plans-bcards
+          .plans-bcard.--base 
+            .plans-bcard__title 
+              img(src="./assets/img/plans/base.svg", alt="") 
+              | Базовый
+            .plans-bcard__price 0 ₽/мес.
+            button.plans__btn Выбрать
+          .plans-bcard.--profi 
+            .plans-bcard__title 
+              img(src="./assets/img/plans/profi.svg", alt="") 
+              | Профи
+            .plans-bcard__price от 990 ₽/мес.
+            button.plans__btn Выбрать
+          .plans-bcard.--guru 
+            .plans-bcard__title 
+              img(src="./assets/img/plans/guru.svg", alt="") 
+              | Гуру
+            .plans-bcard__price от 11 990 ₽/мес.
+            button.plans__btn Выбрать
+          .plans-bcard.--online
+            .plans-bcard__title 
+              img(src="./assets/img/plans/online.svg", alt="") 
+              | Онлайн-академия
+            .plans-bcard__price от 30 000 ₽/мес.
+            button.plans__btn Выбрать
