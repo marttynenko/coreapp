@@ -123,6 +123,20 @@ function gifInViewport() {
 }
 if (document.querySelector('.gifs-in')) {
   gifInViewport();
+
+  //если будут гифки, сразу подгружаем их
+  document.querySelectorAll('img.gif-trigger').forEach(element => {
+    const src = element.dataset.gif
+    const img = new Image()
+    img.src = src
+    img.classList.add('img-hidden')
+    img.onload = () => {
+      document.body.appendChild(img)
+      setTimeout(() => {
+        img.remove()
+      }, 3000);
+    }
+  })
 }
 
 

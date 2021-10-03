@@ -1,4 +1,8 @@
-
+img.img-hidden {
+  position: absolute;
+  opacity: 0;
+  z-index: -999;
+}
 
 .main{
   background: url(../img/ceo/point.svg) repeat left top/20px auto;
@@ -1820,7 +1824,7 @@
     border-radius: 12px;
     box-shadow: 16px 16px 0px $gray-900;
     border: 5px solid $gray-900;
-    padding: 41px 30px 75px;
+    padding: 40px 80px 70px 120px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1829,11 +1833,11 @@
   &__pic{
     padding-right: 35px;
     position: relative;
-    max-width: 50%;
+    width: 50%;
   }
 
   &__info{
-    max-width: 50%;
+    width: 50%;
     padding-left: 35px;
   }
 
@@ -1852,6 +1856,10 @@
   }
 
   @media (max-width: 992px) {
+    
+    &__wrap {
+      padding: 40px 30px 70px 40px;
+    }
     &__pic {
       padding-right: 15px;
     }
@@ -1872,6 +1880,7 @@
   @media (max-width: 770px) {
     &__wrap {
       display: block;
+      padding: 40px 30px;
     }
     &__pic {
       margin: 0 auto 55px;
