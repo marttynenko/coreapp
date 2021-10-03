@@ -1,8 +1,9 @@
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
 
 const scroll = () => {
+  gsap.registerPlugin(ScrollTrigger);
   window.addEventListener('load',function(){
 
  
@@ -19,20 +20,54 @@ const scroll = () => {
     //   x: () => window.innerWidth - section.offsetWidth - 20,
     // });
     
-    // const trigger = document.querySelector('.add__list');
-    // const tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: trigger,
-    //     start: "top 50%",
-    //     end: "+=250",
-    //     scrub: 1,
-    //     markers: true
-    //   }
-    // })
-    // tl.to(section,{
-    //   x: -550,
-    // })
+    const trigger = document.querySelector('.add');
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        pin: true,
+        // pinType: 'transform',
+        trigger: trigger,
+        start: "top top",
+        end: "+=250",
+        scrub: 1,
+        markers: true
+      }
+    })
+    tl.fromTo(section,{
+      x: (index, target, targets) => {
+        // const el = document.querySelector('.add_scroll');
+        const listWidth = section.getBoundingClientRect().width
+        const container = document.querySelector('.add__scroll-wrap').getBoundingClientRect().width
+        return container - listWidth
+      },
+    },{
+      x: 0
+    })
   }
+
+
+  // const gifResponsive = document.querySelector('.about');
+  // const tl2 = gsap.timeline({
+  //   scrollTrigger:{
+  //     trigger: gifResponsive,
+  //     start: 0,
+  //     end: "max",
+  //     onUpdate: updateValues
+  //   },
+  // });
+  // tl2.to('.about__title',{opacity: 0.5})
+  
+  
+  // function updateValues() {
+  //   if (ScrollTrigger.isInViewport(gifResponsive)) {
+  //     console.log('in')
+  //   } else {
+  //     console.log('none');
+  //   }
+  // }
+  // updateValues();
+
+  
+
   })
 }
 

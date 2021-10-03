@@ -23,7 +23,8 @@ export const paths = {
         stylesWatch: './src/scss/**/*',
         stylesStatic: ['./src/scss/fonts/**/*', './src/scss/vendor/**/*', './src/scss/img/**/*'],
         scriptsBuild: './src/js/main.js',
-        scriptsWatch: './src/js/**/*',
+        // scriptsWatch: './src/js/**/*',
+        scriptsWatch: './src/scripts/**/*',
         static: [
             './src/static/**/*',
             '!./src/static/img/**/*',

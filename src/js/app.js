@@ -1,6 +1,5 @@
 
 // import { form } from 'form';
-import { video } from 'video';
 import { accardeon } from 'accardeon';
 import { slider } from 'slider';
 import { scroll } from 'scroll';
@@ -8,7 +7,6 @@ import $ from 'jquery';
 
 let app = {
   init() {
-    video();
     scroll();
     slider();
     accardeon();

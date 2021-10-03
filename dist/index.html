@@ -5,18 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Главная :: Frontend pack</title>
-    <!--
-    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
-    link(rel="manifest" href="assets/site.webmanifest")
-    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
-    link(rel="shortcut icon" href="assets/favicon.ico")
-    meta(name="msapplication-TileColor" content="#ffffff")
-    meta(name="msapplication-config" content="assets/browserconfig.xml")
-    meta(name="theme-color" content="#ffffff")
-    
-    -->
     <meta name="description" content="Description">
     <meta property="og:url" content="https://">
     <meta property="og:type" content="website">
@@ -26,7 +14,6 @@
     <meta property="twitter:description" content="description">
     <meta property="og:image" content="assets/share.png">
     <link rel="stylesheet" href="./assets/css/common.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </head>
   <body class="body">
     <div class="page-wrapper" id="page-wrapper">
@@ -375,31 +362,34 @@
               </div>
             </div>
             <div class="about__panel --blocks">
-              <div class="row">
-                <div class="col-md-4 col-sm-5 sm-order-1">
-                  <div class="h3">Блоки и шаблоны для уроков </div>
-                </div>
-                <div class="col-md-8 col-sm-7 sm-order-1">
-                  <div class="about__text">Создавай уроки и курсы с помощью готовых блоков и шаблонов методом переноса. Конструируй и тестируй уроки бесплатно.</div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="about__pics-block">
-                    <div class="about__pic-block about__pic-block-1"><img src="./assets/img/about/2.svg" alt=""></div>
-                    <div class="about__pic-block about__pic-block-2"><img src="./assets/img/about/3.svg" alt="">
-                      <div class="about__pic-animate"> <img src="./assets/img/about/4.svg" alt=""></div>
-                      <div class="about__mouse"><img src="./assets/img/about/mouse.svg" alt=""></div>
-                    </div>
-                    <div class="about__pic-block about__pic-block-3"><img src="./assets/img/about/5.svg" alt=""></div>
+              <div class="about__panel-trigger">
+                <div class="row">
+                  <div class="col-md-4 col-sm-5 sm-order-1">
+                    <div class="h3">Блоки и шаблоны для уроков </div>
                   </div>
-                </div>
-                <div class="col-sm-8">
-                  <div class="about__info"> 
-                    <div class="about__animate">  
-                      <div class="about__animate-head">
-                        <div class="about__animate-number">1</div>
-                        <div class="about__animate-text">Страница урока</div>
+                  <div class="col-md-8 col-sm-7 sm-order-1">
+                    <div class="about__text">Создавай уроки и курсы с помощью готовых блоков и шаблонов методом переноса. Конструируй и тестируй уроки бесплатно.</div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="about__pics-block">
+                      <div class="about__pic-block about__pic-block-1"><img src="./assets/img/about/2.svg" alt=""></div>
+                      <div class="about__pic-block about__pic-block-2"><img src="./assets/img/about/3.svg" alt="">
+                        <div class="about__pic-animate"> <img src="./assets/img/about/4.svg" alt="">
+                          <div class="about__mouse"><img src="./assets/img/about/mouse.svg" alt=""></div>
+                        </div>
                       </div>
-                      <div class="about__animate-pic"><img src="./assets/img/about/pic.jpg" alt=""></div>
+                      <div class="about__pic-block about__pic-block-3"><img src="./assets/img/about/5.svg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="about__info"> 
+                      <div class="about__animate">  
+                        <div class="about__animate-head">
+                          <div class="about__animate-number">1</div>
+                          <div class="about__animate-text">Страница урока</div>
+                        </div>
+                        <div class="about__animate-pic"><img src="./assets/img/about/pic.jpg" alt=""></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -418,7 +408,7 @@
                 </div>
               </div>
             </div>
-            <div class="about__panel --work">
+            <div class="about__panel --work gifs-in">
               <div class="row"> 
                 <div class="col-sm-4"> 
                   <div class="about__pic"> <img class="gif-trigger" src="./assets/img/main/responsive.png" alt="responsive" data-gif="./assets/img/about/7.gif" data-src="./assets/img/main/responsive.png"></div>
@@ -486,45 +476,47 @@
               <div class="add__title-descr">Бесплатно создавай, тестируй и доводи свой курс до идеала. Плати только за запуск.</div>
             </div>
           </div>
-          <div class="add__list">
+          <div class="add__list" id="add__list">
             <div class="container">
-              <div class="add__scroll">
-                <div class="add__item">
-                  <div class="add__item-label">Бесплатно</div>
-                  <div class="add__number">01</div>
-                  <div class="add__pic"> <img src="./assets/img/add/1.svg" alt=""></div>
-                  <div class="add__text"><b>Зарегистрируйся</b> <br>и познакомься <br>с платформой</div>
-                </div>
-                <div class="add__item"> 
-                  <div class="add__number">02</div>
-                  <div class="add__pic"> <img src="./assets/img/add/2.svg" alt=""></div>
-                  <div class="add__text">Создай <b>бесконечное</b><br> кол-во уроков</div>
-                </div>
-                <div class="add__item"> 
-                  <div class="add__number">03</div>
-                  <div class="add__pic"> <img src="./assets/img/add/3.svg" alt=""></div>
-                  <div class="add__text"><b>Тестируй</b> <br>и <b>корректируй</b> уроки</div>
-                </div>
-                <div class="add__item"> 
-                  <div class="add__number">04</div>
-                  <div class="add__pic"> <img src="./assets/img/add/4.svg" alt=""></div>
-                  <div class="add__text">Собери курс <br>и <b>подготовь</b> <br><b>его к продаже</b></div>
-                </div>
-                <div class="add__item"> 
-                  <div class="add__item-label --green">Платно</div>
-                  <div class="add__number --green">05</div>
-                  <div class="add__pic"> <img src="./assets/img/add/5.svg" alt=""></div>
-                  <div class="add__text"><b>Запусти курс</b></div>
-                </div>
-                <div class="add__item"> 
-                  <div class="add__number --green">06</div>
-                  <div class="add__pic"> <img src="./assets/img/add/6.svg" alt=""></div>
-                  <div class="add__text">Добавляй учеников к курсу</div>
-                </div>
-                <div class="add__item"> 
-                  <div class="add__number --green">07</div>
-                  <div class="add__pic"> <img src="./assets/img/add/7.svg" alt=""></div>
-                  <div class="add__text">Обучай и анализируй прогресс</div>
+              <div class="add__scroll-wrap" id="add__scroll-wrap">
+                <div class="add__scroll" id="add__scroll">
+                  <div class="add__item">
+                    <div class="add__item-label">Бесплатно</div>
+                    <div class="add__number">01</div>
+                    <div class="add__pic"> <img src="./assets/img/add/1.svg" alt=""></div>
+                    <div class="add__text"><b>Зарегистрируйся</b> <br>и познакомься <br>с платформой</div>
+                  </div>
+                  <div class="add__item"> 
+                    <div class="add__number">02</div>
+                    <div class="add__pic"> <img src="./assets/img/add/2.svg" alt=""></div>
+                    <div class="add__text">Создай <b>бесконечное</b><br> кол-во уроков</div>
+                  </div>
+                  <div class="add__item"> 
+                    <div class="add__number">03</div>
+                    <div class="add__pic"> <img src="./assets/img/add/3.svg" alt=""></div>
+                    <div class="add__text"><b>Тестируй</b> <br>и <b>корректируй</b> уроки</div>
+                  </div>
+                  <div class="add__item"> 
+                    <div class="add__number">04</div>
+                    <div class="add__pic"> <img src="./assets/img/add/4.svg" alt=""></div>
+                    <div class="add__text">Собери курс <br>и <b>подготовь</b> <br><b>его к продаже</b></div>
+                  </div>
+                  <div class="add__item"> 
+                    <div class="add__item-label --green">Платно</div>
+                    <div class="add__number --green">05</div>
+                    <div class="add__pic"> <img src="./assets/img/add/5.svg" alt=""></div>
+                    <div class="add__text"><b>Запусти курс</b></div>
+                  </div>
+                  <div class="add__item"> 
+                    <div class="add__number --green">06</div>
+                    <div class="add__pic"> <img src="./assets/img/add/6.svg" alt=""></div>
+                    <div class="add__text">Добавляй учеников к курсу</div>
+                  </div>
+                  <div class="add__item"> 
+                    <div class="add__number --green">07</div>
+                    <div class="add__pic"> <img src="./assets/img/add/7.svg" alt=""></div>
+                    <div class="add__text">Обучай и анализируй прогресс</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -899,8 +891,8 @@
         </section>
         <section class="speed">
           <div class="container">
-            <div class="speed__wrap">
-              <div class="speed__pic"><img class="speed__gif gif-trigger" src="./assets/img/main/speed.png" alt="speed" data-gif="./assets/img/speed/speed.gif" loading="lazy"><img class="speed__avatar" src="./assets/img/speed/speed__avatar.png" alt="avatar" loading="lazy"></div>
+            <div class="speed__wrap gifs-in">
+              <div class="speed__pic"><img class="speed__gif gif-trigger" src="./assets/img/main/speed.png" alt="speed" data-gif="./assets/img/speed/speed.gif" data-src="./assets/img/main/speed.png" loading="lazy"><img class="speed__avatar" src="./assets/img/speed/speed__avatar.png" alt="avatar" loading="lazy"></div>
               <div class="speed__info"> 
                 <div class="title-bluelines speed__title">
                   <p class="title-blueline"> <span>Улучшай</span></p><br>
@@ -1062,7 +1054,7 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/vendors~main.bundle.js"></script>
-    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
