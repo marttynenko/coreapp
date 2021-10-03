@@ -66,11 +66,28 @@ img.img-hidden {
       line-height: 1.1;
       margin-bottom: 35px;
       font-weight: 600;
-      text-shadow: 
-        1px -1px #FFF,
-        2px -2px #FFF,
-        3px -3px #FFF,
-        4px -4px #000;
+      // text-shadow: 
+      //   1px -1px #FFF,
+      //   2px -2px #FFF,
+      //   3px -3px #FFF,
+      //   4px -4px #000;
+    }
+    &-relative,
+    &-platform {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+    }
+    &-shadow {
+      position: absolute;
+      z-index: -1;
+      right: -3px;
+      top: -3px;
+      width: 100%;
+      color: #FFF;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #262B37;
+      
     }
     &-platform {
       position: relative;
