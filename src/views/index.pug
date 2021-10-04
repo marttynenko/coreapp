@@ -22,7 +22,7 @@ block content
         .btn-arrow
           img(src="./assets/img/main/arrow.svg", alt="")
         .main__btn
-          button.btn.--blue-main 
+          a.btn.--blue-main(href="https://coreapp.ai/app")
             | Начать бесплатно
   section.stats 
     .container 
@@ -47,9 +47,10 @@ block content
       .video__block 
         img(src="./assets/img/main/main-course.jpeg", alt="Всё, что нужно для создания лучших курсов на рынке", loading="lazy")
       .btn-center 
-        button.btn.--blue-shadow 
+        a.btn.--blue-shadow(href="https://coreapp.ai/app")
           | Создать свой курс
           +svgsprite('btn-arrow')
+
   section.decisions
     .container 
       h2 Решения для онлайн-образования
@@ -113,9 +114,10 @@ block content
       .integration__description.--gray  И ещё <b>10+ интеграций</b> в работе...
       .integration__description Создаем интеграции по индивидуальному <br>запросу. Срок – <b>не дольше двух недель!</b> 
       .btn-center
-        button.btn.--blue-shadow
+        a.btn.--blue-shadow(href="https://coreapp.ai/app")
           | Запросить интеграцию
           +svgsprite('btn-arrow')
+
   section.ceo 
     .ceo__main 
       .container 
@@ -127,7 +129,7 @@ block content
           img(src="./assets/img/ceo/ceo.png", alt="")
     .container 
       .btn-center
-        button.btn.--blue-shadow
+        a.btn.--blue-shadow(href="https://coreapp.ai/app")
           | Протестировать платформу
           +svgsprite('btn-arrow')
 
@@ -230,7 +232,7 @@ block content
               img(src="./assets/img/about/10.png", alt="", loading="lazy")
         
       .btn-center
-        button.btn.--blue-shadow.about--btn
+        a.btn.--blue-shadow.about--btn(href="https://coreapp.ai/app")
           | Начать своё дело
           +svgsprite('btn-arrow')
 
@@ -282,7 +284,7 @@ block content
               .add__text Обучай и анализируй прогресс
     .container
       .btn-center
-        a.btn.--blue-shadow.about--btn(href="#")
+        a.btn.--blue-shadow.about--btn(href="https://coreapp.ai/app")
           | Начать бесплатно
           +svgsprite('btn-arrow')
 
@@ -374,13 +376,105 @@ block content
   section.cases 
     .container 
       h2 Кейсы
-      .cases__list 
-        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
-        +case('./assets/img/cases/2.svg', 'Онлайн-академия для Digital Dolina')(class="--gray")
-        +case('./assets/img/cases/3.svg', 'Онлайн-академия для Digital Dolina')(class="--red")
-        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
-        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
-        +case('./assets/img/cases/1.svg', 'Онлайн-академия для Digital Dolina')(class="--dark")
+      .cases__list
+        a.case(href="#") 
+          .case__pic
+            .case__img.--purple
+              img(src="./assets/img/cases/1.svg", alt="Онлайн-академия для Digital Dolina")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для Digital Dolina
+        
+        a.case(href="#") 
+          .case__pic
+            .case__img.--dark
+              img(src="./assets/img/cases/2.svg", alt="Онлайн-академия для Calltouch")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для Calltouch
+        
+        a.case(href="#") 
+          .case__pic
+            .case__img
+              img(src="./assets/img/cases/3.png", srcset="./assets/img/cases/3@2x.png 2x" alt="Онлайн-академия для Клик")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для Клик
+
+        a.case(href="#") 
+          .case__pic
+            .case__img.--dark
+              img(src="./assets/img/cases/4.svg", alt="Онлайн-академия для Selective")
+              .case__circle
+                +svgsprite('next')
+          .case__title «Рэп. Фундамент» для Selective
+        
+        a.case(href="#") 
+          .case__pic
+            .case__img.--dark
+              img(src="./assets/img/cases/5.png", srcset="./assets/img/cases/5@2x.png 2x" alt="Онлайн-академия для TeenStudy")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для TeenStudy
+
+        a.case(href="#") 
+          .case__pic
+            .case__img
+              img(src="./assets/img/cases/6.svg", alt="Предпринимательство с ДВФУ")
+              .case__circle
+                +svgsprite('next')
+          .case__title Предпринимательство с ДВФУ
+
+        a.case(href="#") 
+          .case__pic
+            .case__img.--red
+              img(src="./assets/img/cases/7.svg", alt="Онлайн-академия для KT Online")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для KT Online
+
+        a.case(href="#") 
+          .case__pic
+            .case__img.--blue
+              img(src="./assets/img/cases/8.svg", alt="Онлайн-академия для РУДН")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для РУДН
+
+        a.case(href="#") 
+          .case__pic
+            .case__img
+              img(src="./assets/img/cases/9.png", srcset="./assets/img/cases/9@2x.png 2x" alt="Онлайн-академия для Units Kids")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для Units Kids
+
+        a.case(href="#") 
+          .case__pic
+            .case__img.--dark
+              img(src="./assets/img/cases/10.svg", alt="Онлайн-академия для МАТЧ")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для МАТЧ
+
+        a.case(href="#") 
+          .case__pic
+            .case__img
+              img(src="./assets/img/cases/11.png", srcset="./assets/img/cases/11@2x.png 2x" alt="Онлайн-академия для X10")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для X10
+        
+        a.case(href="#") 
+          .case__pic
+            .case__img.--dark
+              img(src="./assets/img/cases/12.svg", alt="Онлайн-академия для HackerU")
+              .case__circle
+                +svgsprite('next')
+          .case__title Онлайн-академия для HackerU
+        
+
+        
 
   section.reports 
     .container 
@@ -431,7 +525,7 @@ block content
         .swiper-button-next.report__nav-button
           +svgsprite('next')
       .btn-center 
-        button.btn.--blue-shadow
+        a.btn.--blue-shadow(href="https://coreapp.ai/app")
           | Зарегистрироваться
           +svgsprite('btn-arrow')
   section.news 
@@ -439,36 +533,119 @@ block content
       h2 СМИ о нас
       .news__list
         a.news__item(href="#") 
-          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
+          .news__pic
+            img(src="./assets/img/news/1.jpg" alt="новость" loading="lazy")
           .news__title Моя миссия — помочь инфобесам стать инфоангелами
           .news__link Подробнее →
+
         a.news__item(href="#") 
-          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
-          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__pic
+            img(src="./assets/img/news/2.jpg" alt="новость" loading="lazy")
+          .news__title Онлайн-курс на кончиках пальцев. Команда CoreApp делает образование максимально доступным
           .news__link Подробнее →
+
         a.news__item(href="#") 
-          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
-          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__pic
+            img(src="./assets/img/news/3.jpg" alt="новость" loading="lazy")
+          .news__title Образовательная платформа CoreApp привлекла $3 млн
           .news__link Подробнее →
+
         a.news__item(href="#") 
-          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
-          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__pic
+            img(src="./assets/img/news/4.jpg" alt="новость" loading="lazy")
+          .news__title АСИ назвало лидеров дистанционного образования за период пандемии
           .news__link Подробнее →
+
         a.news__item(href="#") 
-          .news__pic(style="background-image: url(./assets/img/news/1.jpg);")
-          .news__title Моя миссия — помочь инфобесам стать инфоангелами
+          .news__pic
+            img(src="./assets/img/news/5.jpg" alt="новость" loading="lazy")
+          .news__title CoreApp: как один стартап меняет рынок онлайн-образования
           .news__link Подробнее →
+
+        a.news__item(href="#") 
+          .news__pic
+            img(src="./assets/img/news/6.jpg" alt="новость" loading="lazy")
+          .news__title Образовательная онлайн-платформа CoreApp появилась на маркетплейсе ZOOM
+          .news__link Подробнее →
+        
   section.faq 
     .container 
       h2 Остались вопросы?
       .faq__list
-        +accardeon('Чем CoreApp отличается от других платформ по запуску курсов?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
-        +accardeon('Есть ли ограничения по количеству уроков/материалов внутри онлайн-курса, с которыми я столкнусь?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
-        +accardeon('Как повысить доходимость курсов с помощью CoreApp?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
-        +accardeon('Использование СoreApp с мобильных устройств', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
-        +accardeon('Тарифы: как оплатить выбранный тариф и чем выгодна годовая подписка?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
-        +accardeon('В чем отличие урока на CoreApp от курса на CoreApp?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
-        +accardeon('Как вы защищаете персональные данные и контент?', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam. Suscipit necessitatibus numquam blanditiis dolores odit modi dolorum eligendi consequatur, quae aliquam! Possimus molestiae consectetur iste! Iste tempore blanditiis, laboriosam possimus id voluptate suscipit incidunt quisquam pariatur natus. Ut, quos vitae. Omnis iste, pariatur error in quis nobis harum et!')
+        .accardeon
+          .accardeon__main 
+            | Чем CoreApp отличается от других платформ по запуску курсов?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p На CoreApp можно бесплатно создавать неограниченное количество уроков даже на «Базовом тарифе». Знакомиться с платформой, тестировать ее функционал, загружать контент, получать обратную связь от учеников, конструировать и дорабатывать курс — бесплатно.
+            p Стоимость тарифа зависит от числа запущенных курсов. Мы не привязываем стоимость тарифа к количеству пользователей. 990 рублей — запуск одного курса на нашей образовательной платформе, количество обучающихся на курсе не ограничено
+            p Возможен запуск синхронных курсов — добавлять уроки можно к уже запущенным курсам.
+
+        .accardeon
+          .accardeon__main Есть ли ограничения по количеству уроков/материалов внутри онлайн-курса, с которыми я столкнусь?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p На COREapp можно создавать курсы любой сложности, используя доступные инструменты. По количеству блоков и упражнений в тренинге ограничений нет.
+            p При работе над созданием уроков легко адаптировать педагогические шаблоны из нашей библиотеки для разработки эффективных онлайн-материалов
+
+        .accardeon
+          .accardeon__main 
+            | Какие инструменты помогают сделать урок интерактивным?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p На COREapp есть все возможности для проведения вебинаров, создания курсов, live-уроков, конференций и спецпроектов.
+            p Например, разработать диалоговый тренажер — это один из главных современных инструментов для создания интерактивного курса. Помогает моделировать реальные ситуации, в которых может оказаться учащийся, и создавать разные сценарии.
+            p Доступна интеграция с Tilda, Learningapps, Zoom, Wordwall, Apple music. Пользователь платить за один сервис, а получает функционал всех приложений, необходимых для работы над онлайн-курсом.
+
+        .accardeon
+          .accardeon__main Как я могу оплатить выбранный тариф?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p Доступны три тарифа «Базовый», «Профи» и «Гуру». Стоимость тарифов отличается по количеству активных курсов.
+            p Выбирайте подходящий вам тариф и оплачивайте с помощью банковской карты. Автопродление можно настроить в разделе «Тарифы» в личном кабинете.
+            p Если вы хотите оплатить тариф как юрлицо, напишите, пожалуйста, в техподдержку.
+        
+        .accardeon
+          .accardeon__main В чем отличие урока на CoreApp от курса на CoreApp?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p Урок всегда затрагивает одну тему. Курс помогает выстроить образовательный процесс в единую систему: организовать четкую структуру контента, настроить контрольные уроки и тестирования с проверкой знаний. Учащийся будет отслеживать свой прогресс. Урок может пройти любой студент, у которого есть ссылка. Для получения доступа к курсу необходимо приглашение его создателя. Таким образом, доступ к материалам онлайн-курса можно ограничить и сделать платным.
+            p Пример курса: 
+              a(href="https://library.coreapp.ai/tproduct/246713177-693590597771-zdorovoe-pitanie-ot-a-do-ya") «Здоровое питание от, А до Я».
+            h5 Возможности онлайн-курса:
+            ul 
+              li Просмотр прогресса по каждому ученику.
+              li Выгрузка результатов прохождений в формате CSV.
+              li Проведение онлайн-вебинаров благодаря интеграции с сервисом ZOOM.
+              li Возможность добавлять тьюторов — других преподавателей, которые могут оценивать выполнение заданий и давать обратную связь.
+
+        .accardeon
+          .accardeon__main Можно использовать платформу с мобильного устройства?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p Наша платформа адаптирована под мобильные устройства, с них возможно её использование: работа в личном кабинете, прохождение уроков.
+            p Если добавить "иконку" на рабочий стол мобильного устройства, будет почти как приложение. Более подробно можно прочитать тут: 
+              a(href="https://www.instagram.com/p/CI8LnspFbte/") https://www.instagram.com/p/CI8LnspFbte/
+            p К сожалению, создание уроков с мобильного устройства невозможно из-за широкой функциональности конструктора уроков.
+
+        .accardeon
+          .accardeon__main Как вы защищаете персональные данные и контент?
+            .accardeon__ico 
+              +svgsprite('plus')
+          .accardeon__drop
+            p В целях безопасности мы храним все данные на Российских серверах, в том числе резервных.
+            p По соглашению о защите персональных данных, мы отвечаем за их безопасное хранение (доступ к ним имеют только те, кто отвечает за функционирование CoreApp), мы ответственны за возврат и за удаление информации в случае утечки.
+            p Также, в целях безопасности, по запросу, мы можем допускать работу с CoreApp всех пользователей со сторонних клиентских серверов (возможно в рамках тарифа онлайн-академия).
+            p Защита контента у нас организована через защиту видео: мы интегрируем сервисы, которые обеспечивают защиту видео от скачивания и распространения на сторонних доменах. Для этих целей у нас есть интеграция с сервисами Kinescope и Vimeo.
+
+        
+
       .btn-center 
         button.btn.--blue-border
           | Справочный центр
@@ -487,4 +664,4 @@ block content
             p.title-blueline 
               span продукт
             p с CoreApp
-          button.btn.--blue-full Зарегистрироваться
+          a.btn.--blue-full(href="https://coreapp.ai/app") Зарегистрироваться

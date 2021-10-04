@@ -1441,6 +1441,7 @@ img.img-hidden {
   transition: .4s;
   display: block;
   margin-bottom: 58px;
+
   &:hover{
     .case__img{
       transform: translate(12px, 12px);
@@ -1497,21 +1498,33 @@ img.img-hidden {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     border-radius: 6px;
     position: relative;
     transition: .4s;
     z-index: 10;
-    &.--dark{
-      border: 2px solid $gray-900;
-      background-color: $gray-800;
+    background-color: #F4F6F9;
+    border: 2px solid #CDD4DE;
+
+    img {
+      max-height: 125px;
     }
-    &.--gray{
-      background-color: $gray-200;
-      border: 2px solid $gray-400;
+
+    &.--dark{
+      border-color: $gray-900;
+      background-color: $gray-800;
     }
     &.--red{
       background-color: $negative-500;
-      border: 2px solid $negative-200;
+      border-color: $negative-200;
+    }
+    &.--blue {
+      background-color: #EBF5FF;
+      border-color: #C7E2FF;
+    }
+    &.--purple {
+      background-color: #F3E5FF;
+      border-color: #E3BAF6;
     }
   }
 
@@ -1709,17 +1722,28 @@ img.img-hidden {
     width: calc(33% - 40px);
     margin-right: 40px;
     margin-bottom: 60px;
+
+    &:hover {
+      .news__link {
+        color: $primary-400;
+      }
+    }
   }
 
   &__pic{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border: 2px solid $gray-900;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
-    height: 216px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    img {
+      border-radius: 10px;
+    }
   }
 
   &__title{
@@ -1820,14 +1844,23 @@ img.img-hidden {
     padding: 22px 70px 22px 22px;
     padding-top: 0px;
     display: none;
-    p{
-      font-size: 14px;
-      &:not(:first-child){
-        margin-top: 20px;
+    font-size: 14px;
+
+    p, ul, ol, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        list-style: disc inside;
       }
     }
+    ol {
+      li {
+        list-style: decimal inside;
+      }
+    }
+    
     a{
-      font-size: 14px;
       text-decoration: underline;
       color: $primary-500;
     }
