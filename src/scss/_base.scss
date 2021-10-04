@@ -36,6 +36,10 @@
 	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
 	padding-bottom: 100px;
+
+  @media (max-width: 576px) {
+    padding-bottom: 85px;
+  }
 }
 #footer {
 	-webkit-flex: 0 0 auto;

@@ -15,14 +15,14 @@ gulp.task('images', () => {
         .pipe(gulpif(production, imagemin([
             imageminPngquant({
                 speed: 5,
-                quality: [0.6, 0.8]
+                quality: [0.85, 0.95]
             }),
             imageminZopfli({
                 more: true
             }),
             imageminMozjpeg({
                 progressive: true,
-                quality: 90
+                quality: 95
             }),
             imagemin.svgo({
                 plugins: [
