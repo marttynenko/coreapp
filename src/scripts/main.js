@@ -9,13 +9,14 @@ function scrollMagicAnimations() {
   }
 
   if (scene_1.trigger) {
-    scene_1.tween = gsap.fromTo(scene_1.animated,{
-      x: (index, target, targets) => {
-        const listWidth = scene_1.animated.getBoundingClientRect().width
-        const containerWidth = document.querySelector('#add__scroll-wrap').getBoundingClientRect().width
-        return containerWidth - listWidth
-      }},
-      { x:0 }
+    scene_1.tween = gsap.to(scene_1.animated,
+      {
+        x: (index, target, targets) => {
+          const listWidth = scene_1.animated.getBoundingClientRect().width
+          const containerWidth = document.querySelector('#add__scroll-wrap').getBoundingClientRect().width
+          return containerWidth - listWidth
+        }
+      }
     )
   
     scene_1.scene = new ScrollMagic.Scene({triggerElement: scene_1.trigger, duration: 250, offset: -50})
