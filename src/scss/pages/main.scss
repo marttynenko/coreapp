@@ -1733,15 +1733,26 @@ img.img-hidden {
   &__pic{
     border: 2px solid $gray-900;
     border-radius: 10px;
-    overflow: hidden;
     margin-bottom: 30px;
-    height: 210px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 
+    &:after {
+      content: "";
+      display: block;
+      padding-top: 58%;
+    }
+
     img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      min-width: 100%;
+      min-height: 100%;
       border-radius: 10px;
     }
   }
