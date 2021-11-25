@@ -1,13 +1,11 @@
 header.header#header
   .header__inner
-    .header__logo 
-      img(src="./assets/img/logo.svg", alt="")
+    a.header__logo(href="/")
+      img(src="assets/img/logo.svg", alt="")
     nav.header__nav
       .nav__link.nav__link__drop Решения
-      a.nav__link(href="./plans.html") Тарифы
+      a.nav__link(href="./pricing") Тарифы
     .header__btns 
-      a.header__mail(href="#") 
-        img(src="./assets/img/header/mail.svg", alt="")
       .header__enter
         a.btn.--blue-full(href="https://coreapp.ai/app") 
           | Регистрация / Вход
@@ -96,7 +94,7 @@ header.header#header
 
       .col-md-3.md-hidden
         .menu__right
-          img(src="./assets/img/header/menu-background.svg", alt="")
+          img(src="assets/img/header/menu-background.svg", alt="")
           .menu__right-title Перенос курса <br>с другой платформы
           .menu__right-button
             button.btn.--blue-border.--openpopup(data-popup="transfer")

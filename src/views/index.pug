@@ -6,21 +6,21 @@ block config
 block content
   section.main
     .main__pic
-      img(src="./assets/img/main/main-img-group2.svg", alt="alt")
+      img(src="assets/img/main/main-img-group2.svg", alt="alt")
     .container
       .main__tag С чёткой методологией
       .main__title
         .main__title-txt 
           span.main__title-platform Платформа
             span.main__title-shadow Платформа
-            img.main__title-platform-img(src="./assets/img/platform.svg", alt="Платформа")
+            img.main__title-platform-img(src="assets/img/platform.svg", alt="Платформа")
           br
           span.main__title-relative для онлайн-обучения
             span.main__title-shadow для онлайн-обучения
       .main__text Создавай вовлекающие курсы, проводи вебинары и live-уроки, используй современные гибкие методологии разработки и зарабатывай на своей экспертизе. Построй свой бизнес в онлайн-образовании с CoreApp.
       .btn-center 
         .btn-arrow
-          img(src="./assets/img/main/arrow.svg", alt="")
+          img(src="assets/img/main/arrow.svg", alt="")
         .main__btn
           a.btn.--blue-main(href="https://coreapp.ai/app")
             | Начать бесплатно
@@ -45,7 +45,7 @@ block content
     .container 
       h2.video__title Всё, что нужно для создания лучших курсов на рынке
       .video__block 
-        img(src="./assets/img/main/main-course.jpeg", alt="Всё, что нужно для создания лучших курсов на рынке", loading="lazy")
+        img(src="assets/img/main/main-course.jpeg", alt="Всё, что нужно для создания лучших курсов на рынке", loading="lazy")
       .btn-center 
         a.btn.--blue-shadow(href="https://coreapp.ai/app")
           | Создать свой курс
@@ -60,7 +60,7 @@ block content
             .decisions__title Блогерам <br>и обучающим <br>экспертам
             .decisions__text Создавай впечатляющие онлайн-курсы без технических специалистов и нервотрёпки. Начни свой онлайн-бизнес без рисков и переплат
             .decisions__btn 
-              button.btn.--blue-border 
+              a.btn.--blue-border(href="https://ru.coreapp.ai/solutions/online-academy")
                 | Открыть
                 +svgsprite('btn-arrow')
         
@@ -69,7 +69,7 @@ block content
             .decisions__title Крупным онлайн-школам
             .decisions__text Выстраивай независимую и гибкую образовательную экосистему под собственным брендом без ограничений по пользователям
             .decisions__btn 
-              button.btn.--blue-border 
+              a.btn.--blue-border(href="https://ru.coreapp.ai/solutions/online-academy")
                 | Открыть
                 +svgsprite('btn-arrow')
         .col-md-4.col-xs-6
@@ -77,31 +77,31 @@ block content
             .decisions__title Бизнесу
             .decisions__text Создавай образовательное пространство профессионалого роста персонала. Отбор кандидатов, повышение квалификации, онбординг, диагностика, ассессмент.
             .decisions__img 
-              img(src="./assets/img/decisions/5.svg", alt="")
+              img(src="assets/img/decisions/5.svg", alt="")
             .decisions__btn 
-              button.btn.--blue-border 
+              a.btn.--blue-border(href="https://ru.coreapp.ai/solutions/corporate")
                 | Открыть
                 +svgsprite('btn-arrow')
 
         .col-md-4.col-xs-6        
           .decisions__item.--bg-4
             .decisions__img 
-              img(src="./assets/img/decisions/6.svg", alt="")
+              img(src="assets/img/decisions/6.svg", alt="")
             .decisions__title Вузам и ИРО
             .decisions__text Самое время выходить на рынок онлайн-ДПО и осваивать внебюджетные потоки. Интеграция с ФИС ФРДО
             .decisions__btn 
-              button.btn.--blue-border 
+              a.btn.--blue-border(href="https://ru.coreapp.ai/solutions/iro")
                 | Открыть
                 +svgsprite('btn-arrow')
 
         .col-md-4.col-xs-6.md-order--1
           .decisions__item.--bg-5
             .decisions__img 
-              img(src="./assets/img/decisions/7.png", alt="")
+              img(src="assets/img/decisions/7.png", alt="")
             .decisions__title Репетиторам <br>и консультантам
             .decisions__text Проводи вовлекающие занятия, мастер-классы, вебинары: дистанционно, очно и в смешанном режиме. 
             .decisions__btn 
-              button.btn.--blue-border 
+              a.btn.--blue-border(href="https://ru.coreapp.ai/solutions/online-academy")
                 | Открыть
                 +svgsprite('btn-arrow')
 
@@ -110,11 +110,11 @@ block content
       .h2.integration__title Интеграции
       .integration__title-description Все что нужно для успешного запуска <br>образовательного проекта – уже в CoreApp
       .integration__pics
-        img(src="./assets/img/integration/icons.png", alt="Интеграции", loading="lazy")
+        img(src="assets/img/integration/icons.png", alt="Интеграции", loading="lazy")
       .integration__description.--gray  И ещё <b>10+ интеграций</b> в работе...
       .integration__description Создаем интеграции по индивидуальному <br>запросу. Срок – <b>не дольше двух недель!</b> 
       .btn-center
-        a.btn.--blue-shadow(href="https://coreapp.ai/app")
+        button.btn.--blue-shadow.--openpopup(data-popup="integration")
           | Запросить интеграцию
           +svgsprite('btn-arrow')
 
@@ -126,7 +126,7 @@ block content
           .ceo__title-description CEO и основатель образовательной онлайн-платформы CoreApp  
           .ceo__text Наш адаптивный онлайн-инструмент помогает пользователям в 80 странах мира! С нами уже работают РУДН, Сбербанк, Банк России, Союзмультфильм, МегаФон, Danone и многие другие. Сотрудничай с CoreApp и становись заметным на рынке онлайн-образования!
         .ceo__pic
-          img(src="./assets/img/ceo/ceo.png", alt="")
+          img(src="assets/img/ceo/ceo.png", alt="")
     .container 
       .btn-center
         a.btn.--blue-shadow(href="https://coreapp.ai/app")
@@ -140,7 +140,7 @@ block content
         .row
           .col-sm-4
             .about__pic
-              img(src="./assets/img/main/metodology.png", alt="CoreApp", loading="lazy")
+              img(src="assets/img/main/metodology.png", alt="CoreApp", loading="lazy")
           .col-sm-8
             .about__info 
               h3 Методология
@@ -160,15 +160,15 @@ block content
             .col-sm-4
               .about__pics-block
                 .about__pic-block.about__pic-block-1
-                  img(src="./assets/img/cards/text.svg", alt="")
+                  img(src="assets/img/cards/text.svg", alt="")
                 .about__pic-block.about__pic-block-2
-                  img(src="./assets/img/about/3.svg", alt="")
+                  img(src="assets/img/about/3.svg", alt="")
                   .about__pic-animate 
-                    img(src="./assets/img/cards/img.svg", alt="")
+                    img(src="assets/img/cards/img.svg", alt="")
                     .about__mouse
-                      img(src="./assets/img/about/mouse.svg", alt="")
+                      img(src="assets/img/about/mouse.svg", alt="")
                 .about__pic-block.about__pic-block-3
-                  img(src="./assets/img/cards/question.svg", alt="Вопрос с автопроверкой")
+                  img(src="assets/img/cards/question.svg", alt="Вопрос с автопроверкой")
             .col-sm-8
               .about__info 
                 .about__animate   
@@ -176,7 +176,7 @@ block content
                     .about__animate-number 1
                     .about__animate-text Страница урока
                   .about__animate-pic
-                    img(src="./assets/img/about/pic.jpg", alt="")
+                    img(src="assets/img/about/pic.jpg", alt="")
         
       .about__panel.--online
         .row.--aicn
@@ -186,14 +186,14 @@ block content
               .about__text Подключай оплату через аквайринг Робокассы, лендинг на Тильде и саму платформу. Студенты могут приобрести курс прямо на вашем сайте без сторонних сервисов и переплат. Если нет своей онлайн-кассы, мы предоставим свою за день!
           .col-sm-4.sm-order--1
             .about__pic 
-              img(src="./assets/img/about/6.svg", alt="", loading="lazy")
+              img(src="assets/img/about/6.svg", alt="", loading="lazy")
         
         
       .about__panel.--work.gifs-in
         .row 
           .col-sm-4 
             .about__pic 
-              img.gif-trigger(src="./assets/img/main/responsive.png", alt="responsive", data-gif="./assets/img/about/7.gif", data-src="./assets/img/main/responsive.png")
+              img.gif-trigger(src="assets/img/main/responsive.png", alt="responsive", data-gif="assets/img/about/7.gif", data-src="assets/img/main/responsive.png")
           .col-sm-8
             .about__info 
               .h3 Работа на всех устройствах
@@ -207,14 +207,14 @@ block content
               .about__text Привлекай учеников с помощью чат-ботов из всех социальных сетей и мессенджеров. От простых автоворонок до полной автоматизации вашего взаимодействия с клиентами. 
           .col-sm-4.sm-order--1
             .about__pic
-              img(src="./assets/img/about/8.svg", alt="", loading="lazy")
+              img(src="assets/img/about/8.svg", alt="", loading="lazy")
         
         
       .about__panel.--storage
         .row
           .col-sm-4 
             .about__pic
-              img(src="./assets/img/about/9.png", alt="" loading="lazy")
+              img(src="assets/img/about/9.png", alt="" loading="lazy")
           .col-sm-8
             .about__info 
               .h3 Безопасное хранение контента
@@ -229,7 +229,7 @@ block content
               .about__text Отслеживай прогресс и совершенствуй свои курсы, улучшай результаты учеников, влияй на вовлеченность, выстраивай долгосрочные отношения, развивай свой образовательный бренд.
           .col-sm-4.sm-order--1
             .about__pic
-              img(src="./assets/img/about/10.png", alt="", loading="lazy")
+              img(src="assets/img/about/10.png", alt="", loading="lazy")
         
       .btn-center
         a.btn.--blue-shadow.about--btn(href="https://coreapp.ai/app")
@@ -249,38 +249,38 @@ block content
               .add__item-label Бесплатно
               .add__number 01
               .add__pic 
-                img(src="./assets/img/add/1.png", srcset="./assets/img/add/1@2x.png 2x", alt="")
+                img(src="assets/img/add/1.png", srcset="assets/img/add/1@2x.png 2x", alt="")
               .add__text <b>Зарегистрируйся</b> <br>и познакомься <br>с платформой
             .add__item 
               .add__number 02
               .add__pic 
-                img(src="./assets/img/add/2.svg", alt="")
+                img(src="assets/img/add/2.svg", alt="")
               .add__text Создай <b>бесконечное</b><br> кол-во уроков
             .add__item 
               .add__number 03
               .add__pic 
-                img(src="./assets/img/add/3.svg", alt="")
+                img(src="assets/img/add/3.svg", alt="")
               .add__text <b>Тестируй</b> <br>и <b>корректируй</b> уроки
             .add__item 
               .add__number 04
               .add__pic 
-                img(src="./assets/img/add/4.svg", alt="")
+                img(src="assets/img/add/4.svg", alt="")
               .add__text Собери курс <br>и <b>подготовь</b> <br><b>его к продаже</b>
             .add__item 
               .add__item-label.--green Платно
               .add__number.--green 05
               .add__pic 
-                img(src="./assets/img/add/5.svg", alt="")
+                img(src="assets/img/add/5.svg", alt="")
               .add__text <b>Запусти курс</b>
             .add__item 
               .add__number.--green 06
               .add__pic 
-                img(src="./assets/img/add/6.png", srcset="./assets/img/add/6@2x.png 2x" alt="")
+                img(src="assets/img/add/6.png", srcset="assets/img/add/6@2x.png 2x" alt="")
               .add__text Добавляй учеников к курсу
             .add__item 
               .add__number.--green 07
               .add__pic 
-                img(src="./assets/img/add/7.svg", alt="")
+                img(src="assets/img/add/7.svg", alt="")
               .add__text Обучай и анализируй прогресс
     .container
       .btn-center
@@ -295,7 +295,7 @@ block content
         .plans__item.--base
           .plans__top
             .plans__title
-              img(src="./assets/img/plans/base.svg", alt="") 
+              img(src="assets/img/plans/base.svg", alt="") 
               | Базовый 
             .plans__description Для репетиторов<br> и начинающих<br> специалистов
             ul.plans__list
@@ -309,11 +309,11 @@ block content
               li.plans__li Сбор статистики по уроку
           .plans__bottom 
             .plans__price 0 ₽ / месяц
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://coreapp.ai/app/teach/") Выбрать
         .plans__item.--profi.--black-friday
           .plans__top
             .plans__title
-              img(src="./assets/img/plans/profi.svg", alt="") 
+              img(src="assets/img/plans/profi.svg", alt="") 
               | Профи
             .plans__description 
               | Для малого<br> бизнеса
@@ -334,11 +334,11 @@ block content
             .plans__price 
               .plans__price-old от 990 ₽ / мес.
             .plans__sale.plans__sale-profi от 540 ₽/мес.*
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://coreapp.ai/app/combined/") Выбрать
         .plans__item.--guru.--black-friday
           .plans__top
             .plans__title
-              img(src="./assets/img/plans/guru.svg", alt="") 
+              img(src="assets/img/plans/guru.svg", alt="") 
               | Гуру
             .plans__description 
               | Для крупных компаний<br> и экспертов
@@ -352,11 +352,11 @@ block content
             .plans__price
               .plans__price-old 14 000 ₽ / месяц
             .plans__sale.plans__sale-guru от 540 ₽/мес.*
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://coreapp.ai/app/combined?plan=guru") Выбрать
         .plans__item.--online
           .plans__top
             .plans__title
-              img(src="./assets/img/plans/online.svg", alt="") 
+              img(src="assets/img/plans/online.svg", alt="") 
               | Онлайн-академия
             .plans__description
               | Для онлайн-школ,<br> вузов и ИРО
@@ -374,7 +374,7 @@ block content
               li.plans__li Интеграция CRM, рассылок, SAP, 1C, PowerBI
           .plans__bottom 
             .plans__price от 30 000 ₽ / месяц
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://ru.coreapp.ai/#popup:open_academy") Выбрать
       .btn-center 
         button.btn.--blue-border Сравнить тарифы
   section.cases 
@@ -384,15 +384,15 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img.--purple
-              img(src="./assets/img/cases/1.svg", alt="Онлайн-академия для Digital Dolina")
+              img(src="assets/img/cases/1.svg", alt="Онлайн-академия для Digital Dolina")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для Digital Dolina
         
-        a.case(href="#") 
+        a.case(href="https://ru.coreapp.ai/journal/analitika-80-ogo-urovnya-ot-calltouch")
           .case__pic
             .case__img.--dark
-              img(src="./assets/img/cases/2.svg", alt="Онлайн-академия для Calltouch")
+              img(src="assets/img/cases/2.svg", alt="Онлайн-академия для Calltouch")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для Calltouch
@@ -400,15 +400,15 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img
-              img(src="./assets/img/cases/3.png", srcset="./assets/img/cases/3@2x.png 2x" alt="Онлайн-академия для Клик")
+              img(src="assets/img/cases/3.png", srcset="assets/img/cases/3@2x.png 2x" alt="Онлайн-академия для Клик")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для Клик
 
-        a.case(href="#") 
+        a.case(href="https://ru.coreapp.ai/journal/platforma-selective-academy")
           .case__pic
             .case__img.--dark
-              img(src="./assets/img/cases/4.svg", alt="Онлайн-академия для Selective")
+              img(src="assets/img/cases/4.svg", alt="Онлайн-академия для Selective")
               .case__circle
                 +svgsprite('next')
           .case__title «Рэп. Фундамент» для Selective
@@ -416,15 +416,15 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img.--dark
-              img(src="./assets/img/cases/5.png", srcset="./assets/img/cases/5@2x.png 2x" alt="Онлайн-академия для TeenStudy")
+              img(src="assets/img/cases/5.png", srcset="assets/img/cases/5@2x.png 2x" alt="Онлайн-академия для TeenStudy")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для TeenStudy
 
-        a.case(href="#") 
+        a.case(href="https://ru.coreapp.ai/journal/dalnevostochnyi-start-online-kurs-predprinimatelstvo") 
           .case__pic
             .case__img
-              img(src="./assets/img/cases/6.svg", alt="Предпринимательство с ДВФУ")
+              img(src="assets/img/cases/6.svg", alt="Предпринимательство с ДВФУ")
               .case__circle
                 +svgsprite('next')
           .case__title Предпринимательство с ДВФУ
@@ -432,15 +432,15 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img.--red
-              img(src="./assets/img/cases/7.svg", alt="Онлайн-академия для KT Online")
+              img(src="assets/img/cases/7.svg", alt="Онлайн-академия для KT Online")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для KT Online
 
-        a.case(href="#") 
+        a.case(href="https://ru.coreapp.ai/journal/rudn_coreapp") 
           .case__pic
             .case__img.--blue
-              img(src="./assets/img/cases/8.svg", alt="Онлайн-академия для РУДН")
+              img(src="assets/img/cases/8.svg", alt="Онлайн-академия для РУДН")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для РУДН
@@ -448,7 +448,7 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img
-              img(src="./assets/img/cases/9.png", srcset="./assets/img/cases/9@2x.png 2x" alt="Онлайн-академия для Units Kids")
+              img(src="assets/img/cases/9.png", srcset="assets/img/cases/9@2x.png 2x" alt="Онлайн-академия для Units Kids")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для Units Kids
@@ -456,7 +456,7 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img.--dark
-              img(src="./assets/img/cases/10.svg", alt="Онлайн-академия для МАТЧ")
+              img(src="assets/img/cases/10.svg", alt="Онлайн-академия для МАТЧ")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для МАТЧ
@@ -464,7 +464,7 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img
-              img(src="./assets/img/cases/11.png", srcset="./assets/img/cases/11@2x.png 2x" alt="Онлайн-академия для X10")
+              img(src="assets/img/cases/11.png", srcset="assets/img/cases/11@2x.png 2x" alt="Онлайн-академия для X10")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для X10
@@ -472,7 +472,7 @@ block content
         a.case(href="#") 
           .case__pic
             .case__img.--dark
-              img(src="./assets/img/cases/12.svg", alt="Онлайн-академия для HackerU")
+              img(src="assets/img/cases/12.svg", alt="Онлайн-академия для HackerU")
               .case__circle
                 +svgsprite('next')
           .case__title Онлайн-академия для HackerU
@@ -488,7 +488,7 @@ block content
           .swiper-slide.report 
             .report__avatar
               .report__pic
-                img(src="./assets/img/reports/avatar.png", alt="", loading="lazy")
+                img(src="assets/img/reports/avatar.png", alt="", loading="lazy")
             .report__info 
               .report__text 
                 | CoreApp намного быстрее и адаптивнее, чем многие LMS. В 
@@ -501,7 +501,7 @@ block content
           .swiper-slide.report 
             .report__avatar
               .report__pic
-                img(src="./assets/img/reports/avatar.png", alt="", loading="lazy")
+                img(src="assets/img/reports/avatar.png", alt="", loading="lazy")
             .report__info 
               .report__text 
                 | CoreApp намного быстрее и адаптивнее, чем многие LMS. В 
@@ -514,7 +514,7 @@ block content
           .swiper-slide.report 
             .report__avatar
               .report__pic
-                img(src="./assets/img/reports/avatar.png", alt="", loading="lazy")
+                img(src="assets/img/reports/avatar.png", alt="", loading="lazy")
             .report__info 
               .report__text 
                 | CoreApp намного быстрее и адаптивнее, чем многие LMS. В 
@@ -536,39 +536,39 @@ block content
     .container 
       h2 СМИ о нас
       .news__list
-        a.news__item(href="#") 
+        a.news__item(href="https://special.theoryandpractice.ru/ideologysazhin") 
           .news__pic
-            img(src="./assets/img/news/1.jpg" alt="новость" loading="lazy")
+            img(src="assets/img/news/1.jpg" alt="новость" loading="lazy")
           .news__title Моя миссия — помочь инфобесам стать инфоангелами
           .news__link Подробнее →
 
-        a.news__item(href="#") 
+        a.news__item(href="https://startupjedi.vc/ru/content/onlayn-kurs-na-konchikah-palcev-komanda-core-delaet-obrazovanie-maksimalno-dostupnym") 
           .news__pic
-            img(src="./assets/img/news/2.jpg" alt="новость" loading="lazy")
+            img(src="assets/img/news/2.jpg" alt="новость" loading="lazy")
           .news__title Онлайн-курс на кончиках пальцев. Команда CoreApp делает образование максимально доступным
           .news__link Подробнее →
 
-        a.news__item(href="#") 
+        a.news__item(href="https://www.kommersant.ru/doc/4592288") 
           .news__pic
-            img(src="./assets/img/news/3.jpg" alt="новость" loading="lazy")
+            img(src="assets/img/news/3.jpg" alt="новость" loading="lazy")
           .news__title Образовательная платформа CoreApp привлекла $3 млн
           .news__link Подробнее →
 
-        a.news__item(href="#") 
+        a.news__item(href="https://tass.ru/obschestvo/11008715") 
           .news__pic
-            img(src="./assets/img/news/4.jpg" alt="новость" loading="lazy")
+            img(src="assets/img/news/4.jpg" alt="новость" loading="lazy")
           .news__title АСИ назвало лидеров дистанционного образования за период пандемии
           .news__link Подробнее →
 
-        a.news__item(href="#") 
+        a.news__item(href="https://telecomdaily.ru/news/2020/11/26/core-kak-odin-startap-menyaet-rynok-onlayn-obrazovaniya?fbclid=IwAR14wKZLjE4_z1ylBNNwMsKWgtLE0Eu5idGguStfZTKVrTtvY8g0U-9SUfs") 
           .news__pic
-            img(src="./assets/img/news/5.jpg" alt="новость" loading="lazy")
+            img(src="assets/img/news/5.jpg" alt="новость" loading="lazy")
           .news__title CoreApp: как один стартап меняет рынок онлайн-образования
           .news__link Подробнее →
 
-        a.news__item(href="#") 
+        a.news__item(href="https://wapstat.info/news/read/obrazovatelnaya-onlajn-platforma-core-poyavilas-na-marketplejse-zoom/") 
           .news__pic
-            img(src="./assets/img/news/6.jpg" alt="новость" loading="lazy")
+            img(src="assets/img/news/6.jpg" alt="новость" loading="lazy")
           .news__title Образовательная онлайн-платформа CoreApp появилась на маркетплейсе ZOOM
           .news__link Подробнее →
         
@@ -651,15 +651,15 @@ block content
         
 
       .btn-center 
-        button.btn.--blue-border
+        a.btn.--blue-border(href="https://help-ru.coreapp.ai/")
           | Справочный центр
           +svgsprite('btn-arrow')
   section.speed
     .container
       .speed__wrap.gifs-in
         .speed__pic
-          img.speed__gif.gif-trigger(src="./assets/img/main/speed.png", alt="speed", data-gif="./assets/img/speed/speed.gif", data-src="./assets/img/main/speed.png" loading="lazy") 
-          img.speed__avatar(src="./assets/img/speed/speed__avatar.png", alt="avatar", loading="lazy") 
+          img.speed__gif.gif-trigger(src="assets/img/main/speed.png", alt="speed", data-gif="assets/img/speed/speed.gif", data-src="assets/img/main/speed.png" loading="lazy") 
+          img.speed__avatar(src="assets/img/speed/speed__avatar.png", alt="avatar", loading="lazy") 
         .speed__info 
           .title-bluelines.speed__title
             p.title-blueline 

@@ -1,7 +1,7 @@
 extends _includes/layout
 
 block config
-  - var pagetitle = 'plans'
+  - var pagetitle = 'pricing'
   - var bodyClass = ''
 block content
   section.plans-page
@@ -432,22 +432,22 @@ block content
               img(src="./assets/img/plans/base.svg", alt="") 
               | Базовый
             .plans-bcard__price 0 ₽/мес.
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://coreapp.ai/app/teach/") Выбрать
           .plans-bcard.--profi 
             .plans-bcard__title 
               img(src="./assets/img/plans/profi.svg", alt="") 
               | Профи
             .plans-bcard__price от 990 ₽/мес.
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://coreapp.ai/app/combined/") Выбрать
           .plans-bcard.--guru 
             .plans-bcard__title 
               img(src="./assets/img/plans/guru.svg", alt="") 
               | Гуру
             .plans-bcard__price 14 000 ₽/мес.
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://coreapp.ai/app/combined?plan=guru") Выбрать
           .plans-bcard.--online
             .plans-bcard__title 
               img(src="./assets/img/plans/online.svg", alt="") 
               | Онлайн-академия
             .plans-bcard__price от 30 000 ₽/мес.
-            button.plans__btn Выбрать
+            a.plans__btn(href="https://ru.coreapp.ai/#popup:open_academy") Выбрать
