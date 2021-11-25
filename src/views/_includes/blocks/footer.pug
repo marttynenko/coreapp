@@ -133,3 +133,18 @@ footer.footer#footer
             button.btn.--blue-shadow
               | Подключить бизнес-аналитику
               +svgsprite('btn-arrow')
+
+button#open_friday_popup.--openpopup(data-popup="friday")
+
+.popup-bg(data-popup="friday",onclick="")             
+.popup(data-popup="friday")
+  .popup-container
+    .popup-content
+      .popup-friday
+        .popup-close.popup-close-white(onclick="")
+        a(href="#") 
+          picture.popup-friday-banner
+            source(media="(min-width: 680px)", srcset="./assets/img/banners/friday-desctop.png")
+            img(src="./assets/img/banners/friday-mobile.png", alt="black friday")
+        
+        

@@ -531,7 +531,7 @@
                   <button class="plans__btn">Выбрать</button>
                 </div>
               </div>
-              <div class="plans__item --profi">
+              <div class="plans__item --profi --black-friday">
                 <div class="plans__top">
                   <div class="plans__title"><img src="./assets/img/plans/profi.svg" alt="">Профи</div>
                   <div class="plans__description">
@@ -552,11 +552,14 @@
                   </ul>
                 </div>
                 <div class="plans__bottom"> 
-                  <div class="plans__price">от 990 ₽ / мес.</div>
+                  <div class="plans__price"> 
+                    <div class="plans__price-old">от 990 ₽ / мес.</div>
+                  </div>
+                  <div class="plans__sale plans__sale-profi">от 540 ₽/мес.*</div>
                   <button class="plans__btn">Выбрать</button>
                 </div>
               </div>
-              <div class="plans__item --guru --hit">
+              <div class="plans__item --guru --black-friday">
                 <div class="plans__top">
                   <div class="plans__title"><img src="./assets/img/plans/guru.svg" alt="">Гуру</div>
                   <div class="plans__description">
@@ -570,7 +573,10 @@
                   </ul>
                 </div>
                 <div class="plans__bottom"> 
-                  <div class="plans__price">14 000 ₽ / месяц</div>
+                  <div class="plans__price">
+                    <div class="plans__price-old">14 000 ₽ / месяц</div>
+                  </div>
+                  <div class="plans__sale plans__sale-guru">от 540 ₽/мес.*</div>
                   <button class="plans__btn">Выбрать</button>
                 </div>
               </div>
@@ -1094,6 +1100,20 @@
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="--openpopup" id="open_friday_popup" data-popup="friday"></button>
+      <div class="popup-bg" data-popup="friday" onclick="">            </div>
+      <div class="popup" data-popup="friday">
+        <div class="popup-container">
+          <div class="popup-content">
+            <div class="popup-friday">
+              <div class="popup-close popup-close-white" onclick=""></div><a href="#"> 
+                <picture class="popup-friday-banner">
+                  <source media="(min-width: 680px)" srcset="./assets/img/banners/friday-desctop.png"><img src="./assets/img/banners/friday-mobile.png" alt="black friday">
+                </picture></a>
             </div>
           </div>
         </div>

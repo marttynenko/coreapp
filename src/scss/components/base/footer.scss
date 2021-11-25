@@ -173,6 +173,12 @@ footer.footer {
     background-color: #fff;
     z-index: 1;
   }
+  &-friday {
+    margin: 20px auto;
+    box-shadow: -12px 12px 0px #333A4A;
+    border-radius: 6px;
+    background: #171717;
+  }
   &-bg {
     top: 0;
     left: 0;
@@ -195,6 +201,11 @@ footer.footer {
     background: url(../img/main/close.svg) center no-repeat;
     background-size: contain;
     cursor: pointer;
+
+    &-white {
+      filter: brightness(10);
+      top: 40px;
+    }
   }
   
 }
@@ -242,4 +253,12 @@ footer.footer {
 }
 html.--overflowhidden {
   overflow: hidden;
+}
+
+.popup-friday-banner {
+  display: block;
+  border-radius: 6px;
+}
+#open_friday_popup {
+  display: none;
 }

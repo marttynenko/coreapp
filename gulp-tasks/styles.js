@@ -6,7 +6,8 @@ import debug from 'gulp-debug';
 import browsersync from 'browser-sync';
 import plumber from 'gulp-plumber';
 import gulpif from 'gulp-if';
-import sass from 'gulp-sass';
+// import sass from 'gulp-sass';
+const sass = require('gulp-sass')(require('node-sass'))
 import autoprefixer from 'gulp-autoprefixer';
 import mincss from 'gulp-clean-css';
 import sourcemaps from 'gulp-sourcemaps';

@@ -240,4 +240,9 @@ jQuery(document).ready(function($){
       $(this).toggleClass('active');
     }
   })
+
+
+  setTimeout(() => {
+    $('#open_friday_popup').click();
+  },5000)
 });
