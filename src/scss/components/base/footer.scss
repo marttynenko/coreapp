@@ -134,6 +134,21 @@ footer.footer {
   -webkit-backface-visibility: hidden;
   overflow: hidden scroll;
 
+  &__panel {
+    .iframe__container {
+      margin: 0 auto;
+      width: 400px;
+    }
+
+    iframe {
+      height: 185px!important;
+      margin: 0 auto!important;
+      width: 350px !important;
+      transform: none !important;
+      display: block;
+    }
+  }
+
   &-container {
     text-align: center;
     position: absolute;
