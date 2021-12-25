@@ -512,7 +512,8 @@
                   <div class="plans__price">0 ₽ / месяц</div><a class="plans__btn" href="https://coreapp.ai/app/teach/">Выбрать</a>
                 </div>
               </div>
-              <div class="plans__item --profi --black-friday">
+              <div class="plans__item --profi --new-year">
+                <div class="plans__item-ny-sticker">Скидка <br> 40% на год</div>
                 <div class="plans__top">
                   <div class="plans__title"><img src="assets/img/plans/profi.svg" alt="">Профи</div>
                   <div class="plans__description">
@@ -539,7 +540,8 @@
                   <div class="plans__sale plans__sale-profi">от 540 ₽/мес.*</div><a class="plans__btn" href="https://coreapp.ai/app/combined/">Выбрать</a>
                 </div>
               </div>
-              <div class="plans__item --guru --black-friday">
+              <div class="plans__item --guru --new-year">
+                <div class="plans__item-ny-sticker">Вечная подписка</div>
                 <div class="plans__top">
                   <div class="plans__title"><img src="assets/img/plans/guru.svg" alt="">Гуру</div>
                   <div class="plans__description">
@@ -556,7 +558,7 @@
                   <div class="plans__price">
                     <div class="plans__price-old">14 000 ₽ / месяц</div>
                   </div>
-                  <div class="plans__sale plans__sale-guru">от 540 ₽/мес.*</div><a class="plans__btn" href="https://coreapp.ai/app/combined?plan=guru">Выбрать</a>
+                  <div class="plans__sale plans__sale-guru">от 6 300 ₽/мес.*</div><a class="plans__btn" href="https://coreapp.ai/app/combined?plan=guru">Выбрать</a>
                 </div>
               </div>
               <div class="plans__item --online">
@@ -1093,8 +1095,22 @@
           </div>
         </div>
       </div>
+      <button class="--openpopup" id="open_ny_popup" data-popup="ny"></button>
+      <div class="popup-bg" data-popup="ny" onclick="">            </div>
+      <div class="popup" data-popup="ny">
+        <div class="popup-container">
+          <div class="popup-content">
+            <div class="popup-newyear">
+              <div class="popup-close popup-close-white" onclick=""></div><a href="#"> 
+                <picture class="popup-friday-banner">
+                  <source media="(min-width: 680px)" srcset="./assets/img/banners/ny-popup.png, ./assets/img/banners/ny-popup@2x.png 2x"><img src="./assets/img/banners/ny-popup-mobile.png" srcset="./assets/img/banners/ny-popup-mobile@2x.png 2x" alt="black friday">
+                </picture></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="assets/js/libs.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?1.1"></script>
   </body>
 </html>

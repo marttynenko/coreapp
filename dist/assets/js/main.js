@@ -243,6 +243,6 @@ jQuery(document).ready(function($){
 
 
   setTimeout(() => {
-    $('#open_friday_popup').click();
+    $('#open_ny_popup').click();
   },5000)
 });

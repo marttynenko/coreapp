@@ -1717,13 +1717,6 @@ footer.footer {
   z-index: 1;
 }
 
-.popup-friday {
-  margin: 20px auto;
-  box-shadow: -12px 12px 0px #333A4A;
-  border-radius: 6px;
-  background: #171717;
-}
-
 .popup-bg {
   top: 0;
   left: 0;
@@ -1752,6 +1745,23 @@ footer.footer {
 .popup-close-white {
   filter: brightness(10);
   top: 40px;
+}
+
+.popup-friday {
+  margin: 20px auto;
+  box-shadow: -12px 12px 0px #333A4A;
+  border-radius: 6px;
+  background: #171717;
+  max-width: 92vw;
+}
+
+.popup-newyear {
+  margin: 20px auto;
+  border: 1px solid #0C64F5;
+  box-shadow: -12px 12px 0px #0C64F5;
+  border-radius: 6px;
+  background: #0C4CD7;
+  max-width: 92vw;
 }
 
 .popup__title {
@@ -1792,7 +1802,8 @@ html.--overflowhidden {
   border-radius: 6px;
 }
 
-#open_friday_popup {
+#open_friday_popup,
+#open_ny_popup {
   display: none;
 }
 
@@ -2801,6 +2812,26 @@ img.img-hidden {
   position: relative;
 }
 
+.plans__item-ny-sticker {
+  position: absolute;
+  right: -20px;
+  top: -23px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 15px;
+  max-width: 135px;
+  border-radius: 23px;
+  background-color: #0C4CD7;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #FFF;
+  font-family: "TT Firs Neue", serif;
+}
+
 .plans__item.--black-friday {
   border: 2px solid #000;
   box-shadow: inset 0px 0px 0px 1px #000;
@@ -2816,6 +2847,11 @@ img.img-hidden {
   background: url(../img/banners/friday-sticker.svg) center no-repeat;
   transform: rotate(9.5deg);
   z-index: 2;
+}
+
+.plans__item.--new-year {
+  border: 2px solid #0C4CD7;
+  box-shadow: inset 0px 0px 0px 1px #0C4CD7;
 }
 
 .plans__item.--hit:after {

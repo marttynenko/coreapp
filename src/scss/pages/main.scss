@@ -1274,6 +1274,26 @@ img.img-hidden {
     flex-wrap: wrap;
     position: relative;
 
+    &-ny-sticker {
+      position: absolute;
+      right: -20px;
+      top: -23px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0px 15px;
+      max-width: 135px;
+      border-radius: 23px;
+      background-color: #0C4CD7;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.2;
+      color: #FFF;
+      font-family: "TT Firs Neue", serif;
+    }
+
     &.--black-friday {
       border: 2px solid #000;
       box-shadow: inset 0px 0px 0px 1px #000;
@@ -1290,6 +1310,11 @@ img.img-hidden {
         transform: rotate(9.5deg);
         z-index: 2;
       }
+    }
+
+    &.--new-year {
+      border: 2px solid #0C4CD7;
+      box-shadow: inset 0px 0px 0px 1px #0C4CD7;
     }
 
     &.--hit{

@@ -188,12 +188,6 @@ footer.footer {
     background-color: #fff;
     z-index: 1;
   }
-  &-friday {
-    margin: 20px auto;
-    box-shadow: -12px 12px 0px #333A4A;
-    border-radius: 6px;
-    background: #171717;
-  }
   &-bg {
     top: 0;
     left: 0;
@@ -221,6 +215,21 @@ footer.footer {
       filter: brightness(10);
       top: 40px;
     }
+  }
+  &-friday {
+    margin: 20px auto;
+    box-shadow: -12px 12px 0px #333A4A;
+    border-radius: 6px;
+    background: #171717;
+    max-width: 92vw;
+  }
+  &-newyear {
+    margin: 20px auto;
+    border: 1px solid #0C64F5;
+    box-shadow: -12px 12px 0px #0C64F5;
+    border-radius: 6px;
+    background: #0C4CD7;
+    max-width: 92vw;
   }
   
 }
@@ -274,6 +283,7 @@ html.--overflowhidden {
   display: block;
   border-radius: 6px;
 }
-#open_friday_popup {
+#open_friday_popup,
+#open_ny_popup {
   display: none;
 }
